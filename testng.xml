@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.xuriti.api_NBFC.TC_01_NBFC_Add"/>
+
+      <class name="com.xuriti.api_NBFC.TC_06_NBFC_unmap"/>
+      <class name="com.xuriti.api_NBFC.TC_09_NBFC_mis_report_mapping"/>
+      <class name="com.xuriti.api_NBFC.TC_02_NBFC_get_all_"/>
+      <class name="com.xuriti.api_NBFC.TC_08_NBFC_mis_report"/>
+      <class name="com.xuriti.api_NBFC.TC_03_NBFC_get_by_id"/>
+      <class name="com.xuriti.api_NBFC.TC_05_NBFC_Mapping"/>
+      <class name="com.xuriti.api_NBFC.TC_13_NBFC_invoive"/>
+      <class name="com.xuriti.api_NBFC.TC_04_NBFC_edit_by_id"/>
+      <class name="com.xuriti.api_NBFC.TC_11_NBFC_dashboard"/>
+      <class name="com.xuriti.api_NBFC.TC_07_NBFC_get_Mapped"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
