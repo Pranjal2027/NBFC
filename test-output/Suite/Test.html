@@ -1,0 +1,1986 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>267/7/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 26 13:55:43 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>33 seconds (33051 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Invoice_Services.TC_08_Add_Invoice_Comment.Invoice_Comment_Add()'><b>Invoice_Comment_Add</b><br>Test class: Invoice_Services.TC_08_Add_Invoice_Comment<br>Parameters: 635f532a6b206c7eb71a151c, Trail, 638ded61e9437438d4d01473</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;502&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:505)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:687)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at Invoice_Services.TC_08_Add_Invoice_Comment.Invoice_Comment_Add(TC_08_Add_Invoice_Comment.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1104932907", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1104932907'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;502&gt;.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:505)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:687)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at jdk.internal.reflect.GeneratedMethodAccessor109.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at Invoice_Services.TC_08_Add_Invoice_Comment.Invoice_Comment_Add(TC_08_Add_Invoice_Comment.java:72)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Invoice_Services.TC_08_Add_Invoice_Comment@514646ef</td></tr>
+<tr>
+<td title='Invoice_Services.TC_02_Get_Invoice_Details.Get_Invoice_Deatils()'><b>Get_Invoice_Deatils</b><br>Test class: Invoice_Services.TC_02_Get_Invoice_Details</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;502&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:505)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:687)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at Invoice_Services.TC_02_Get_Invoice_Details.Get_Invoice_Deatils(TC_02_Get_Invoice_Details.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1802358329", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1802358329'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;502&gt;.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:505)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:687)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at jdk.internal.reflect.GeneratedMethodAccessor109.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at Invoice_Services.TC_02_Get_Invoice_Details.Get_Invoice_Deatils(TC_02_Get_Invoice_Details.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Invoice_Services.TC_02_Get_Invoice_Details@28dcca0c</td></tr>
+<tr>
+<td title='Invoice_Services.TC_01_Get_Invoice_By_Invoice_Id.Get_All_Invoice()'><b>Get_All_Invoice</b><br>Test class: Invoice_Services.TC_01_Get_Invoice_By_Invoice_Id</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;502&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:505)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:687)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at Invoice_Services.TC_01_Get_Invoice_By_Invoice_Id.Get_All_Invoice(TC_01_Get_Invoice_By_Invoice_Id.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1172105719", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1172105719'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;502&gt;.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:505)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:687)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at jdk.internal.reflect.GeneratedMethodAccessor109.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at Invoice_Services.TC_01_Get_Invoice_By_Invoice_Id.Get_All_Invoice(TC_01_Get_Invoice_By_Invoice_Id.java:63)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Invoice_Services.TC_01_Get_Invoice_By_Invoice_Id@2a693f59</td></tr>
+<tr>
+<td title='Ledger_service.TC_14_total_invoice_details.invoice_details()'><b>invoice_details</b><br>Test class: Ledger_service.TC_14_total_invoice_details</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;502&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:505)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:687)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at Ledger_service.TC_14_total_invoice_details.invoice_details(TC_14_total_invoice_details.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace788045379", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace788045379'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;502&gt;.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:505)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:687)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at jdk.internal.reflect.GeneratedMethodAccessor109.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at Ledger_service.TC_14_total_invoice_details.invoice_details(TC_14_total_invoice_details.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Ledger_service.TC_14_total_invoice_details@7fd50002</td></tr>
+<tr>
+<td title='Invoice_Services.TC_11_Get_Companies_WhatsUp.Get_Companies_WhatsUp()'><b>Get_Companies_WhatsUp</b><br>Test class: Invoice_Services.TC_11_Get_Companies_WhatsUp</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;502&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:505)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:687)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at Invoice_Services.TC_11_Get_Companies_WhatsUp.Get_Companies_WhatsUp(TC_11_Get_Companies_WhatsUp.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1993137729", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1993137729'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;502&gt;.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:505)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:687)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at jdk.internal.reflect.GeneratedMethodAccessor109.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at Invoice_Services.TC_11_Get_Companies_WhatsUp.Get_Companies_WhatsUp(TC_11_Get_Companies_WhatsUp.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Invoice_Services.TC_11_Get_Companies_WhatsUp@2b30a42c</td></tr>
+<tr>
+<td title='Invoice_Services.TC_15_Invoice_Status_Update.Invoice_Status_Update()'><b>Invoice_Status_Update</b><br>Test class: Invoice_Services.TC_15_Invoice_Status_Update</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;502&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:505)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:687)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at Invoice_Services.TC_15_Invoice_Status_Update.Invoice_Status_Update(TC_15_Invoice_Status_Update.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace203607885", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace203607885'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;502&gt;.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:505)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:687)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at jdk.internal.reflect.GeneratedMethodAccessor109.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at Invoice_Services.TC_15_Invoice_Status_Update.Invoice_Status_Update(TC_15_Invoice_Status_Update.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Invoice_Services.TC_15_Invoice_Status_Update@17fc391b</td></tr>
+<tr>
+<td title='Invoice_Services.TC_04_Get_All_Invoice.Get_Invoice_All()'><b>Get_Invoice_All</b><br>Test class: Invoice_Services.TC_04_Get_All_Invoice</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;502&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:505)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:687)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at Invoice_Services.TC_04_Get_All_Invoice.Get_Invoice_All(TC_04_Get_All_Invoice.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace293319588", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace293319588'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;502&gt;.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:505)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:687)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at jdk.internal.reflect.GeneratedMethodAccessor109.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:128)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:136)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at Invoice_Services.TC_04_Get_All_Invoice.Get_Invoice_All(TC_04_Get_All_Invoice.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Invoice_Services.TC_04_Get_All_Invoice@6f53b8a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Create_plan_get.TC_01_Get_Credit_Plan.Get_Credit_Plan_Get()'><b>Get_Credit_Plan_Get</b><br>Test class: Create_plan_get.TC_01_Get_Credit_Plan</td>
+<td></td>
+<td>0</td>
+<td>Create_plan_get.TC_01_Get_Credit_Plan@5ddeb7cb</td></tr>
+<tr>
+<td title='NBFC.TC_16_NBFC_Add_all_Fields.nbfc_post_all_fields()'><b>nbfc_post_all_fields</b><br>Test class: NBFC.TC_16_NBFC_Add_all_Fields</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_16_NBFC_Add_all_Fields@239a307b</td></tr>
+<tr>
+<td title='Add_NBFC.TC_06_NBFC_District_Post.nbfc_dist_SCLN()'><b>nbfc_dist_SCLN</b><br>Test class: Add_NBFC.TC_06_NBFC_District_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_06_NBFC_District_Post@7d900ecf</td></tr>
+<tr>
+<td title='Auth_Services.TC_8_OTP_Verify.Verify_Otp()'><b>Verify_Otp</b><br>Test class: Auth_Services.TC_8_OTP_Verify<br>Parameters: AS@1, 9763926686</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_8_OTP_Verify@6cb107fd</td></tr>
+<tr>
+<td title='Collection_Service.TC_05_Get_Collection_Staff.Get_Staff_List()'><b>Get_Staff_List</b><br>Test class: Collection_Service.TC_05_Get_Collection_Staff</td>
+<td></td>
+<td>0</td>
+<td>Collection_Service.TC_05_Get_Collection_Staff@231f98ef</td></tr>
+<tr>
+<td title='Add_NBFC.TC_12_NBFC_Bank_AC_Number_Post.nbfc_bank_acc_more_21()'><b>nbfc_bank_acc_more_21</b><br>Test class: Add_NBFC.TC_12_NBFC_Bank_AC_Number_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_12_NBFC_Bank_AC_Number_Post@1972e513</td></tr>
+<tr>
+<td title='Add_NBFC.TC_11_NBFC_Branch_Name_Post.branch_name_special_char()'><b>branch_name_special_char</b><br>Test class: Add_NBFC.TC_11_NBFC_Branch_Name_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_11_NBFC_Branch_Name_Post@eadd4fb</td></tr>
+<tr>
+<td title='Add_NBFC.TC_01_NBFC_Post.nbfc_post()'><b>nbfc_post</b><br>Test class: Add_NBFC.TC_01_NBFC_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_01_NBFC_Post@533bda92</td></tr>
+<tr>
+<td title='User_service.TC_04_Email_Staff_User_Post.staff_email_existing()'><b>staff_email_existing</b><br>Test class: User_service.TC_04_Email_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_04_Email_Staff_User_Post@25be7b63</td></tr>
+<tr>
+<td title='Add_NBFC.TC_09_NBFC_Interest_Post.interest_more_2_digit()'><b>interest_more_2_digit</b><br>Test class: Add_NBFC.TC_09_NBFC_Interest_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_09_NBFC_Interest_Post@72bc6553</td></tr>
+<tr>
+<td title='Auth_Services.TC_2_SignUp_Negative_Scenario.Sign_Up()'><b>Sign_Up</b><br>Test class: Auth_Services.TC_2_SignUp_Negative_Scenario<br>Parameters: Varsha, Patil, 8080630830, varsha.patil@tech-trail.com, Xuriti10</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_2_SignUp_Negative_Scenario@6caf0677</td></tr>
+<tr>
+<td title='Invoice_Services.TC_06_Invoice_Amount_Update.Invoice_Amount_Update()'><b>Invoice_Amount_Update</b><br>Test class: Invoice_Services.TC_06_Invoice_Amount_Update<br>Parameters: 5000, 5100, ok</td>
+<td></td>
+<td>0</td>
+<td>Invoice_Services.TC_06_Invoice_Amount_Update@4d1c005e</td></tr>
+<tr>
+<td title='Auth_Services.TC_2_SignUp_Negative_Scenario.Sign_Up()'><b>Sign_Up</b><br>Test class: Auth_Services.TC_2_SignUp_Negative_Scenario<br>Parameters: Varsha, Patil@111, 12345678, varsha.patil@tech-trail.com, Xuriti#10</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_2_SignUp_Negative_Scenario@6caf0677</td></tr>
+<tr>
+<td title='Ledger_service.TC_05_payment_details.payment_details()'><b>payment_details</b><br>Test class: Ledger_service.TC_05_payment_details</td>
+<td></td>
+<td>0</td>
+<td>Ledger_service.TC_05_payment_details@5b247367</td></tr>
+<tr>
+<td title='Ledger_service.TC_08_invoices_dashboard.invoices_dashboard()'><b>invoices_dashboard</b><br>Test class: Ledger_service.TC_08_invoices_dashboard</td>
+<td></td>
+<td>4</td>
+<td>Ledger_service.TC_08_invoices_dashboard@2ab4bc72</td></tr>
+<tr>
+<td title='Ledger_service.TC_06_company_details.company_details_status_hold()'><b>company_details_status_hold</b><br>Test class: Ledger_service.TC_06_company_details</td>
+<td></td>
+<td>0</td>
+<td>Ledger_service.TC_06_company_details@7e057f43</td></tr>
+<tr>
+<td title='Entity_Service.TC_16_Get_Gst_Data.Gst_Data_Blank()'><b>Gst_Data_Blank</b><br>Test class: Entity_Service.TC_16_Get_Gst_Data</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_16_Get_Gst_Data@4f32a3ad</td></tr>
+<tr>
+<td title='User_service.TC_01_Staff_User_Post.add_staff_user()'><b>add_staff_user</b><br>Test class: User_service.TC_01_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_01_Staff_User_Post@268f106e</td></tr>
+<tr>
+<td title='Auth_Services.TC_2_SignUp_Negative_Scenario.Sign_Up()'><b>Sign_Up</b><br>Test class: Auth_Services.TC_2_SignUp_Negative_Scenario<br>Parameters: Varsha, Patil, VFR#@23567, varsha.patil@tech-trail.com, Xuriti#10</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_2_SignUp_Negative_Scenario@6caf0677</td></tr>
+<tr>
+<td title='Company_get_patch_buyer_and_Seller.TC_2_Patch_Company_Status.Company_Status_Msg_Field_Blank()'><b>Company_Status_Msg_Field_Blank</b><br>Test class: Company_get_patch_buyer_and_Seller.TC_2_Patch_Company_Status</td>
+<td></td>
+<td>0</td>
+<td>Company_get_patch_buyer_and_Seller.TC_2_Patch_Company_Status@7c37508a</td></tr>
+<tr>
+<td title='Auth_Services.TC_2_SignUp_Negative_Scenario.Sign_Up()'><b>Sign_Up</b><br>Test class: Auth_Services.TC_2_SignUp_Negative_Scenario<br>Parameters: Varsha, Patil, 8080630830, varsha.patil@tech-trail.com, Xuriti#10</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_2_SignUp_Negative_Scenario@6caf0677</td></tr>
+<tr>
+<td title='Auth_Services.TC_7_Forgot_Password.Forgot_Password()'><b>Forgot_Password</b><br>Test class: Auth_Services.TC_7_Forgot_Password<br>Parameters: &&&&&</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_7_Forgot_Password@673fdbce</td></tr>
+<tr>
+<td title='Add_NBFC.TC_10_NBFC_Bank_Name.nbfc_bank_name_special_char()'><b>nbfc_bank_name_special_char</b><br>Test class: Add_NBFC.TC_10_NBFC_Bank_Name</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_10_NBFC_Bank_Name@43df23d3</td></tr>
+<tr>
+<td title='Ledger_service.TC_01_calender.calender_no_data()'><b>calender_no_data</b><br>Test class: Ledger_service.TC_01_calender</td>
+<td></td>
+<td>0</td>
+<td>Ledger_service.TC_01_calender@4d1bf319</td></tr>
+<tr>
+<td title='NBFC.TC_07_NBFC_get_Mapped.nbfc_get_mapped()'><b>nbfc_get_mapped</b><br>Test class: NBFC.TC_07_NBFC_get_Mapped</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_07_NBFC_get_Mapped@57a78e3</td></tr>
+<tr>
+<td title='Company_get_patch_buyer_and_Seller.TC_1_All_Company.Get_All_Company()'><b>Get_All_Company</b><br>Test class: Company_get_patch_buyer_and_Seller.TC_1_All_Company</td>
+<td></td>
+<td>0</td>
+<td>Company_get_patch_buyer_and_Seller.TC_1_All_Company@14028087</td></tr>
+<tr>
+<td title='User_service.TC_10_terms_conditions.terms_conditions()'><b>terms_conditions</b><br>Test class: User_service.TC_10_terms_conditions</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_10_terms_conditions@5a59ca5e</td></tr>
+<tr>
+<td title='Auth_Services.TC_4_Invalid_Scenario_Sign_In.Invalid_data()'><b>Invalid_data</b><br>Test class: Auth_Services.TC_4_Invalid_Scenario_Sign_In<br>Parameters: , </td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_4_Invalid_Scenario_Sign_In@433defed</td></tr>
+<tr>
+<td title='Auth_Services.TC_2_SignUp_Negative_Scenario.Sign_Up()'><b>Sign_Up</b><br>Test class: Auth_Services.TC_2_SignUp_Negative_Scenario<br>Parameters: Varsha, Patil, , varsha.patil@tech-trail.com, Xuriti#10</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_2_SignUp_Negative_Scenario@6caf0677</td></tr>
+<tr>
+<td title='Add_NBFC.TC_10_NBFC_Bank_Name.nbfc_bank_name_SCNL()'><b>nbfc_bank_name_SCNL</b><br>Test class: Add_NBFC.TC_10_NBFC_Bank_Name</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_10_NBFC_Bank_Name@43df23d3</td></tr>
+<tr>
+<td title='Add_NBFC.TC_14_NBFC_IFSC_Post.IFSC_all_number()'><b>IFSC_all_number</b><br>Test class: Add_NBFC.TC_14_NBFC_IFSC_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_14_NBFC_IFSC_Post@5890e879</td></tr>
+<tr>
+<td title='Add_NBFC.TC_13_NBFC_Bank_Holder_Name_Post.holder_name_dot()'><b>holder_name_dot</b><br>Test class: Add_NBFC.TC_13_NBFC_Bank_Holder_Name_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_13_NBFC_Bank_Holder_Name_Post@6d60fe40</td></tr>
+<tr>
+<td title='User_service.TC_05_Mobile_Staff_User_Post.staff_mobile_letters()'><b>staff_mobile_letters</b><br>Test class: User_service.TC_05_Mobile_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_05_Mobile_Staff_User_Post@338fc1d8</td></tr>
+<tr>
+<td title='Add_NBFC.TC_09_NBFC_Interest_Post.interest_special_char()'><b>interest_special_char</b><br>Test class: Add_NBFC.TC_09_NBFC_Interest_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_09_NBFC_Interest_Post@72bc6553</td></tr>
+<tr>
+<td title='Entity_Service.TC_16_Get_Gst_Data.Gst_Data()'><b>Gst_Data</b><br>Test class: Entity_Service.TC_16_Get_Gst_Data</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_16_Get_Gst_Data@4f32a3ad</td></tr>
+<tr>
+<td title='User_service.TC_05_Mobile_Staff_User_Post.staff_mobile_blank()'><b>staff_mobile_blank</b><br>Test class: User_service.TC_05_Mobile_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_05_Mobile_Staff_User_Post@338fc1d8</td></tr>
+<tr>
+<td title='NBFC.TC_03_NBFC_get_by_id.nbfc_get_by_id()'><b>nbfc_get_by_id</b><br>Test class: NBFC.TC_03_NBFC_get_by_id</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_03_NBFC_get_by_id@3de8f619</td></tr>
+<tr>
+<td title='Company_get_patch_buyer_and_Seller.TC_3_Get_company_by_company_id.Buyer_Get_Company_By_Gst_Number()'><b>Buyer_Get_Company_By_Gst_Number</b><br>Test class: Company_get_patch_buyer_and_Seller.TC_3_Get_company_by_company_id</td>
+<td></td>
+<td>0</td>
+<td>Company_get_patch_buyer_and_Seller.TC_3_Get_company_by_company_id@3cce5371</td></tr>
+<tr>
+<td title='NBFC.TC_17_NBFC_get_by_wrong_id.nbfc_get_by_wrong_id()'><b>nbfc_get_by_wrong_id</b><br>Test class: NBFC.TC_17_NBFC_get_by_wrong_id</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_17_NBFC_get_by_wrong_id@496bc455</td></tr>
+<tr>
+<td title='Add_NBFC.TC_03_NBFC_Email_Post.nbfc_email_double_dot()'><b>nbfc_email_double_dot</b><br>Test class: Add_NBFC.TC_03_NBFC_Email_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_03_NBFC_Email_Post@1033576a</td></tr>
+<tr>
+<td title='User_service.TC_04_Email_Staff_User_Post.staff_email_gmail_format()'><b>staff_email_gmail_format</b><br>Test class: User_service.TC_04_Email_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_04_Email_Staff_User_Post@25be7b63</td></tr>
+<tr>
+<td title='Add_NBFC.TC_04_NBFC_Mobile_Post.nbfc_mobile_special_char()'><b>nbfc_mobile_special_char</b><br>Test class: Add_NBFC.TC_04_NBFC_Mobile_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_04_NBFC_Mobile_Post@6f204a1a</td></tr>
+<tr>
+<td title='Auth_Services.TC_4_Invalid_Scenario_Sign_In.Invalid_data()'><b>Invalid_data</b><br>Test class: Auth_Services.TC_4_Invalid_Scenario_Sign_In<br>Parameters: varsha.patil@tech-trail.com, </td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_4_Invalid_Scenario_Sign_In@433defed</td></tr>
+<tr>
+<td title='Add_NBFC.TC_08_NBFC_Pin_Code_Post.nbfc_pincode_less_6()'><b>nbfc_pincode_less_6</b><br>Test class: Add_NBFC.TC_08_NBFC_Pin_Code_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_08_NBFC_Pin_Code_Post@4bdeaabb</td></tr>
+<tr>
+<td title='Add_NBFC.TC_08_NBFC_Pin_Code_Post.nbfc_pincode_small_letters()'><b>nbfc_pincode_small_letters</b><br>Test class: Add_NBFC.TC_08_NBFC_Pin_Code_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_08_NBFC_Pin_Code_Post@4bdeaabb</td></tr>
+<tr>
+<td title='User_service.TC_07_RegisterBy_Staff_User.staff_regiserby_blank()'><b>staff_regiserby_blank</b><br>Test class: User_service.TC_07_RegisterBy_Staff_User</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_07_RegisterBy_Staff_User@1750fbeb</td></tr>
+<tr>
+<td title='Collection_Service.TC_03_Update_Single_Invoice.Update_Invoice_Comment_Blank()'><b>Update_Invoice_Comment_Blank</b><br>Test class: Collection_Service.TC_03_Update_Single_Invoice</td>
+<td></td>
+<td>0</td>
+<td>Collection_Service.TC_03_Update_Single_Invoice@19932c16</td></tr>
+<tr>
+<td title='NBFC.TC_01_NBFC_Add.nbfc_post()'><b>nbfc_post</b><br>Test class: NBFC.TC_01_NBFC_Add</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_01_NBFC_Add@4722ef0c</td></tr>
+<tr>
+<td title='User_service.TC_06_User_Role_Staff_User_Post.staff_role_SCLN()'><b>staff_role_SCLN</b><br>Test class: User_service.TC_06_User_Role_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_06_User_Role_Staff_User_Post@5745ca0e</td></tr>
+<tr>
+<td title='Entity_Service.TC_03_Add_Entity.Add_Entity_All_Details()'><b>Add_Entity_All_Details</b><br>Test class: Entity_Service.TC_03_Add_Entity</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_03_Add_Entity@303cf2ba</td></tr>
+<tr>
+<td title='Entity_Service.TC_11_Fetch_Entities.Fetch_Entities()'><b>Fetch_Entities</b><br>Test class: Entity_Service.TC_11_Fetch_Entities</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_11_Fetch_Entities@7a5ceedd</td></tr>
+<tr>
+<td title='Auth_Services.TC_2_SignUp_Negative_Scenario.Sign_Up()'><b>Sign_Up</b><br>Test class: Auth_Services.TC_2_SignUp_Negative_Scenario<br>Parameters: , , , , </td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_2_SignUp_Negative_Scenario@6caf0677</td></tr>
+<tr>
+<td title='User_service.TC_03_Last_Name_Staff_User_Post.staff_last_name_special_char()'><b>staff_last_name_special_char</b><br>Test class: User_service.TC_03_Last_Name_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_03_Last_Name_Staff_User_Post@247310d0</td></tr>
+<tr>
+<td title='NBFC.TC_20_NBFC_Mapping_Wrong_url.nbfc_post_Blank_url()'><b>nbfc_post_Blank_url</b><br>Test class: NBFC.TC_20_NBFC_Mapping_Wrong_url</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_20_NBFC_Mapping_Wrong_url@6b695b06</td></tr>
+<tr>
+<td title='Add_NBFC.TC_11_NBFC_Branch_Name_Post.branch_name_SCLN()'><b>branch_name_SCLN</b><br>Test class: Add_NBFC.TC_11_NBFC_Branch_Name_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_11_NBFC_Branch_Name_Post@eadd4fb</td></tr>
+<tr>
+<td title='NBFC.TC_19_NBFC_Mapping_Invalid_Buyer_ID.nbfc_post_invalid_Buyer_ID()'><b>nbfc_post_invalid_Buyer_ID</b><br>Test class: NBFC.TC_19_NBFC_Mapping_Invalid_Buyer_ID</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_19_NBFC_Mapping_Invalid_Buyer_ID@6be968ce</td></tr>
+<tr>
+<td title='NBFC.TC_24_NBFC_reconcellation_one_field_blank.add_reconcellation_batch_id_field_blank()'><b>add_reconcellation_batch_id_field_blank</b><br>Test class: NBFC.TC_24_NBFC_reconcellation_one_field_blank</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_24_NBFC_reconcellation_one_field_blank@2767e23c</td></tr>
+<tr>
+<td title='Entity_Service.TC_04_Update_Company.Update_Entity_Details()'><b>Update_Entity_Details</b><br>Test class: Entity_Service.TC_04_Update_Company</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_04_Update_Company@31ea9581</td></tr>
+<tr>
+<td title='Auth_Services.TC_9_Unblock_user.User_Unblock()'><b>User_Unblock</b><br>Test class: Auth_Services.TC_9_Unblock_user<br>Parameters: varsha.patil@tech-trail.com, </td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_9_Unblock_user@59402b8f</td></tr>
+<tr>
+<td title='Ledger_service.TC_10_get_mis_report_invoice.get_mis_report_invoice_buyer()'><b>get_mis_report_invoice_buyer</b><br>Test class: Ledger_service.TC_10_get_mis_report_invoice</td>
+<td></td>
+<td>0</td>
+<td>Ledger_service.TC_10_get_mis_report_invoice@451001e5</td></tr>
+<tr>
+<td title='Auth_Services.TC_2_SignUp_Negative_Scenario.Sign_Up()'><b>Sign_Up</b><br>Test class: Auth_Services.TC_2_SignUp_Negative_Scenario<br>Parameters: Varsha, , 12345678, varsha.patil@tech-trail.com, Xuriti#10</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_2_SignUp_Negative_Scenario@6caf0677</td></tr>
+<tr>
+<td title='Collection_Service.TC_04_Get_Payment_Invoice_History.Get_Payment_Invoice_History()'><b>Get_Payment_Invoice_History</b><br>Test class: Collection_Service.TC_04_Get_Payment_Invoice_History</td>
+<td></td>
+<td>0</td>
+<td>Collection_Service.TC_04_Get_Payment_Invoice_History@66982506</td></tr>
+<tr>
+<td title='User_service.TC_04_Email_Staff_User_Post.staff_email_missing_at_the_rate()'><b>staff_email_missing_at_the_rate</b><br>Test class: User_service.TC_04_Email_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_04_Email_Staff_User_Post@25be7b63</td></tr>
+<tr>
+<td title='Invoice_Services.TC_05_Get_Entity_summary.Get_Entity_summary()'><b>Get_Entity_summary</b><br>Test class: Invoice_Services.TC_05_Get_Entity_summary</td>
+<td></td>
+<td>0</td>
+<td>Invoice_Services.TC_05_Get_Entity_summary@740fb309</td></tr>
+<tr>
+<td title='User_service.TC_04_Email_Staff_User_Post.staff_email_special_char()'><b>staff_email_special_char</b><br>Test class: User_service.TC_04_Email_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_04_Email_Staff_User_Post@25be7b63</td></tr>
+<tr>
+<td title='User_service.TC_04_Email_Staff_User_Post.staff_email_missing_dot()'><b>staff_email_missing_dot</b><br>Test class: User_service.TC_04_Email_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_04_Email_Staff_User_Post@25be7b63</td></tr>
+<tr>
+<td title='Add_NBFC.TC_04_NBFC_Mobile_Post.nbfc_mobile_SCLN()'><b>nbfc_mobile_SCLN</b><br>Test class: Add_NBFC.TC_04_NBFC_Mobile_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_04_NBFC_Mobile_Post@6f204a1a</td></tr>
+<tr>
+<td title='User_service.TC_02_First_Name_Staff_User_Post.staff_first_name_number()'><b>staff_first_name_number</b><br>Test class: User_service.TC_02_First_Name_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_02_First_Name_Staff_User_Post@221a3fa4</td></tr>
+<tr>
+<td title='User_service.TC_04_Email_Staff_User_Post.staff_email_blank()'><b>staff_email_blank</b><br>Test class: User_service.TC_04_Email_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_04_Email_Staff_User_Post@25be7b63</td></tr>
+<tr>
+<td title='Add_NBFC.TC_05_NBFC_Address_Post.nbfc_address_number()'><b>nbfc_address_number</b><br>Test class: Add_NBFC.TC_05_NBFC_Address_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_05_NBFC_Address_Post@536f2a7e</td></tr>
+<tr>
+<td title='Invoice_Services.TC_21_Add_Comment.Add_Comment()'><b>Add_Comment</b><br>Test class: Invoice_Services.TC_21_Add_Comment</td>
+<td></td>
+<td>0</td>
+<td>Invoice_Services.TC_21_Add_Comment@5386659f</td></tr>
+<tr>
+<td title='Ledger_service.TC_02_get_MIS_report.get_mis_report()'><b>get_mis_report</b><br>Test class: Ledger_service.TC_02_get_MIS_report</td>
+<td></td>
+<td>0</td>
+<td>Ledger_service.TC_02_get_MIS_report@4d0d9fe7</td></tr>
+<tr>
+<td title='Auth_Services.TC_2_SignUp_Negative_Scenario.Sign_Up()'><b>Sign_Up</b><br>Test class: Auth_Services.TC_2_SignUp_Negative_Scenario<br>Parameters: Varsha, Patil, 12345678, varsha.patil@tech-trail.com, Xuriti#10</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_2_SignUp_Negative_Scenario@6caf0677</td></tr>
+<tr>
+<td title='Add_NBFC.TC_02_NBFC_Name_Post.nbfc_name_blank()'><b>nbfc_name_blank</b><br>Test class: Add_NBFC.TC_02_NBFC_Name_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_02_NBFC_Name_Post@48e1f6c7</td></tr>
+<tr>
+<td title='Add_NBFC.TC_02_NBFC_Name_Post.nbfc_name_number()'><b>nbfc_name_number</b><br>Test class: Add_NBFC.TC_02_NBFC_Name_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_02_NBFC_Name_Post@48e1f6c7</td></tr>
+<tr>
+<td title='NBFC.TC_26_NBFC_disbursment.add_disbursbment_beneficiary_gst_field_blank()'><b>add_disbursbment_beneficiary_gst_field_blank</b><br>Test class: NBFC.TC_26_NBFC_disbursment</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_26_NBFC_disbursment@15a34df2</td></tr>
+<tr>
+<td title='Add_NBFC.TC_10_NBFC_Bank_Name.nbfc_bank_name_blank()'><b>nbfc_bank_name_blank</b><br>Test class: Add_NBFC.TC_10_NBFC_Bank_Name</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_10_NBFC_Bank_Name@43df23d3</td></tr>
+<tr>
+<td title='Add_NBFC.TC_09_NBFC_Interest_Post.interest_SCN()'><b>interest_SCN</b><br>Test class: Add_NBFC.TC_09_NBFC_Interest_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_09_NBFC_Interest_Post@72bc6553</td></tr>
+<tr>
+<td title='NBFC.TC_24_NBFC_reconcellation_one_field_blank.add_reconcellation_gst_amount_field_blank()'><b>add_reconcellation_gst_amount_field_blank</b><br>Test class: NBFC.TC_24_NBFC_reconcellation_one_field_blank</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_24_NBFC_reconcellation_one_field_blank@2767e23c</td></tr>
+<tr>
+<td title='User_service.TC_05_Mobile_Staff_User_Post.staff_mobile_special_char()'><b>staff_mobile_special_char</b><br>Test class: User_service.TC_05_Mobile_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_05_Mobile_Staff_User_Post@338fc1d8</td></tr>
+<tr>
+<td title='NBFC.TC_14_NBFC_Blank.nbfc_post_blank()'><b>nbfc_post_blank</b><br>Test class: NBFC.TC_14_NBFC_Blank</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_14_NBFC_Blank@4007f65e</td></tr>
+<tr>
+<td title='Entity_Service.TC_08_Add_Comment.Add_Comment_User_Id_Field_Blank()'><b>Add_Comment_User_Id_Field_Blank</b><br>Test class: Entity_Service.TC_08_Add_Comment</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_08_Add_Comment@73eb439a</td></tr>
+<tr>
+<td title='NBFC.TC_04_NBFC_edit_by_id.nbfc_update()'><b>nbfc_update</b><br>Test class: NBFC.TC_04_NBFC_edit_by_id</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_04_NBFC_edit_by_id@305ffe9e</td></tr>
+<tr>
+<td title='Add_NBFC.TC_11_NBFC_Branch_Name_Post.branch_name_blank()'><b>branch_name_blank</b><br>Test class: Add_NBFC.TC_11_NBFC_Branch_Name_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_11_NBFC_Branch_Name_Post@eadd4fb</td></tr>
+<tr>
+<td title='Invoice_Services.TC_10_Interest_Cal.Invoice_Interest_Calculation()'><b>Invoice_Interest_Calculation</b><br>Test class: Invoice_Services.TC_10_Interest_Cal</td>
+<td></td>
+<td>0</td>
+<td>Invoice_Services.TC_10_Interest_Cal@55cb6996</td></tr>
+<tr>
+<td title='Auth_Services.TC_6_Invalid_Scenario_SendOTP.Invalid_otp()'><b>Invalid_otp</b><br>Test class: Auth_Services.TC_6_Invalid_Scenario_SendOTP<br>Parameters: 8080630830</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_6_Invalid_Scenario_SendOTP@7d9d0818</td></tr>
+<tr>
+<td title='Add_NBFC.TC_15_NBFC_Status_Post.nbfc_status_number()'><b>nbfc_status_number</b><br>Test class: Add_NBFC.TC_15_NBFC_Status_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_15_NBFC_Status_Post@7ce026d3</td></tr>
+<tr>
+<td title='NBFC.TC_06_NBFC_unmap.nbfc_unmap()'><b>nbfc_unmap</b><br>Test class: NBFC.TC_06_NBFC_unmap</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_06_NBFC_unmap@2b40ff9c</td></tr>
+<tr>
+<td title='Entity_Service.TC_05_Discount_Controller.Discount_Mapping_Controller_By_Wrong_id()'><b>Discount_Mapping_Controller_By_Wrong_id</b><br>Test class: Entity_Service.TC_05_Discount_Controller</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_05_Discount_Controller@710c2b53</td></tr>
+<tr>
+<td title='Add_NBFC.TC_07_NBFC_State_Post.nbfc_state_blank()'><b>nbfc_state_blank</b><br>Test class: Add_NBFC.TC_07_NBFC_State_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_07_NBFC_State_Post@6e535154</td></tr>
+<tr>
+<td title='Add_NBFC.TC_16_NBFC_Post_Blank.nbfc_post_blank()'><b>nbfc_post_blank</b><br>Test class: Add_NBFC.TC_16_NBFC_Post_Blank</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_16_NBFC_Post_Blank@5f8e8a9d</td></tr>
+<tr>
+<td title='User_service.TC_08_Staff_User_Add_Blanks.staff_add_all_blank()'><b>staff_add_all_blank</b><br>Test class: User_service.TC_08_Staff_User_Add_Blanks</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_08_Staff_User_Add_Blanks@70cf32e3</td></tr>
+<tr>
+<td title='Collection_Service.TC_03_Update_Single_Invoice.Update_Invoice_All_Fields_Blank()'><b>Update_Invoice_All_Fields_Blank</b><br>Test class: Collection_Service.TC_03_Update_Single_Invoice</td>
+<td></td>
+<td>0</td>
+<td>Collection_Service.TC_03_Update_Single_Invoice@19932c16</td></tr>
+<tr>
+<td title='Invoice_Services.TC_03_Search_Invoice_By_Buyer_Id_type.Get_Invoice_By_Buyer_Id()'><b>Get_Invoice_By_Buyer_Id</b><br>Test class: Invoice_Services.TC_03_Search_Invoice_By_Buyer_Id_type</td>
+<td></td>
+<td>1</td>
+<td>Invoice_Services.TC_03_Search_Invoice_By_Buyer_Id_type@24569dba</td></tr>
+<tr>
+<td title='User_service.TC_03_Last_Name_Staff_User_Post.staff_last_name_SCLN()'><b>staff_last_name_SCLN</b><br>Test class: User_service.TC_03_Last_Name_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_03_Last_Name_Staff_User_Post@247310d0</td></tr>
+<tr>
+<td title='NBFC.TC_26_NBFC_disbursment.add_disbursbment_UTR_id_field_blank()'><b>add_disbursbment_UTR_id_field_blank</b><br>Test class: NBFC.TC_26_NBFC_disbursment</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_26_NBFC_disbursment@15a34df2</td></tr>
+<tr>
+<td title='Entity_Service.TC_12_Check_Entity_Status.Check_Entities_Status_Hold()'><b>Check_Entities_Status_Hold</b><br>Test class: Entity_Service.TC_12_Check_Entity_Status</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_12_Check_Entity_Status@7bd7d6d6</td></tr>
+<tr>
+<td title='Auth_Services.TC_1_SignUp_Valid.Signup()'><b>Signup</b><br>Test class: Auth_Services.TC_1_SignUp_Valid</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_1_SignUp_Valid@6f01b95f</td></tr>
+<tr>
+<td title='User_service.TC_15_comp_staff_relation.company_staff_relation_company_field_blank()'><b>company_staff_relation_company_field_blank</b><br>Test class: User_service.TC_15_comp_staff_relation</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_15_comp_staff_relation@4082ba93</td></tr>
+<tr>
+<td title='Collection_Service.TC_03_Update_Single_Invoice.Update_Invoice_Collection_Advisor_Id_Blank()'><b>Update_Invoice_Collection_Advisor_Id_Blank</b><br>Test class: Collection_Service.TC_03_Update_Single_Invoice</td>
+<td></td>
+<td>0</td>
+<td>Collection_Service.TC_03_Update_Single_Invoice@19932c16</td></tr>
+<tr>
+<td title='NBFC.TC_23_NBFC_reconcellation_manully.Reconcellation_manually()'><b>Reconcellation_manually</b><br>Test class: NBFC.TC_23_NBFC_reconcellation_manully</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_23_NBFC_reconcellation_manully@2de56eb2</td></tr>
+<tr>
+<td title='Add_NBFC.TC_06_NBFC_District_Post.nbfc_dist_blank()'><b>nbfc_dist_blank</b><br>Test class: Add_NBFC.TC_06_NBFC_District_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_06_NBFC_District_Post@7d900ecf</td></tr>
+<tr>
+<td title='Entity_Service.TC_12_Check_Entity_Status.Check_Entities_Status_Approved()'><b>Check_Entities_Status_Approved</b><br>Test class: Entity_Service.TC_12_Check_Entity_Status</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_12_Check_Entity_Status@7bd7d6d6</td></tr>
+<tr>
+<td title='Ledger_service.TC_07_nbfc_dashboard.nbfc_dashboard()'><b>nbfc_dashboard</b><br>Test class: Ledger_service.TC_07_nbfc_dashboard</td>
+<td></td>
+<td>0</td>
+<td>Ledger_service.TC_07_nbfc_dashboard@52f27fbd</td></tr>
+<tr>
+<td title='NBFC.TC_05_NBFC_Mapping.nbfc_map()'><b>nbfc_map</b><br>Test class: NBFC.TC_05_NBFC_Mapping</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_05_NBFC_Mapping@6c4906d3</td></tr>
+<tr>
+<td title='Auth_Services.TC_3_SignIn.Sign_In()'><b>Sign_In</b><br>Test class: Auth_Services.TC_3_SignIn</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_3_SignIn@7c137fd5</td></tr>
+<tr>
+<td title='NBFC.TC_26_NBFC_disbursment.add_disbursbment_remarks_field_blank()'><b>add_disbursbment_remarks_field_blank</b><br>Test class: NBFC.TC_26_NBFC_disbursment</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_26_NBFC_disbursment@15a34df2</td></tr>
+<tr>
+<td title='Auth_Services.TC_9_Unblock_user.User_Unblock()'><b>User_Unblock</b><br>Test class: Auth_Services.TC_9_Unblock_user<br>Parameters: , Active</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_9_Unblock_user@59402b8f</td></tr>
+<tr>
+<td title='Auth_Services.TC_5_Send_OTP.Send_otp()'><b>Send_otp</b><br>Test class: Auth_Services.TC_5_Send_OTP<br>Parameters: 9975080948</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_5_Send_OTP@359df09a</td></tr>
+<tr>
+<td title='Add_NBFC.TC_12_NBFC_Bank_AC_Number_Post.nbfc_bank_acc_blank()'><b>nbfc_bank_acc_blank</b><br>Test class: Add_NBFC.TC_12_NBFC_Bank_AC_Number_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_12_NBFC_Bank_AC_Number_Post@1972e513</td></tr>
+<tr>
+<td title='Company_get_patch_buyer_and_Seller.TC_2_Patch_Company_Status.Company_Status_Update_Wrong_Id()'><b>Company_Status_Update_Wrong_Id</b><br>Test class: Company_get_patch_buyer_and_Seller.TC_2_Patch_Company_Status</td>
+<td></td>
+<td>0</td>
+<td>Company_get_patch_buyer_and_Seller.TC_2_Patch_Company_Status@7c37508a</td></tr>
+<tr>
+<td title='Collection_Service.TC_04_Get_Payment_Invoice_History.Get_Payment_Invoice_History_No_Payment()'><b>Get_Payment_Invoice_History_No_Payment</b><br>Test class: Collection_Service.TC_04_Get_Payment_Invoice_History</td>
+<td></td>
+<td>0</td>
+<td>Collection_Service.TC_04_Get_Payment_Invoice_History@66982506</td></tr>
+<tr>
+<td title='NBFC.TC_12_NBFC_calender.calender_no_data()'><b>calender_no_data</b><br>Test class: NBFC.TC_12_NBFC_calender</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_12_NBFC_calender@7188af83</td></tr>
+<tr>
+<td title='Collection_Service.TC_06_Get_Waver_Payment_History.Get_Waver_Payment_History_No_Payment()'><b>Get_Waver_Payment_History_No_Payment</b><br>Test class: Collection_Service.TC_06_Get_Waver_Payment_History</td>
+<td></td>
+<td>0</td>
+<td>Collection_Service.TC_06_Get_Waver_Payment_History@3e08ff24</td></tr>
+<tr>
+<td title='Ledger_service.TC_04_get_ledger.get_ledger_report()'><b>get_ledger_report</b><br>Test class: Ledger_service.TC_04_get_ledger</td>
+<td></td>
+<td>0</td>
+<td>Ledger_service.TC_04_get_ledger@4681c175</td></tr>
+<tr>
+<td title='Entity_Service.TC_08_Add_Comment.Add_Comment_Comment_Field_Blank()'><b>Add_Comment_Comment_Field_Blank</b><br>Test class: Entity_Service.TC_08_Add_Comment</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_08_Add_Comment@73eb439a</td></tr>
+<tr>
+<td title='NBFC.TC_03_NBFC_get_by_id.nbfc_get_by_id_wrong_id()'><b>nbfc_get_by_id_wrong_id</b><br>Test class: NBFC.TC_03_NBFC_get_by_id</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_03_NBFC_get_by_id@3de8f619</td></tr>
+<tr>
+<td title='Add_NBFC.TC_03_NBFC_Email_Post.nbfc_email_number()'><b>nbfc_email_number</b><br>Test class: Add_NBFC.TC_03_NBFC_Email_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_03_NBFC_Email_Post@1033576a</td></tr>
+<tr>
+<td title='Add_NBFC.TC_05_NBFC_Address_Post.nbfc_address_special_char()'><b>nbfc_address_special_char</b><br>Test class: Add_NBFC.TC_05_NBFC_Address_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_05_NBFC_Address_Post@536f2a7e</td></tr>
+<tr>
+<td title='NBFC.TC_22_NBFC_Edit_by_wrong_details.nbfc_edit_by_wrong_id()'><b>nbfc_edit_by_wrong_id</b><br>Test class: NBFC.TC_22_NBFC_Edit_by_wrong_details</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_22_NBFC_Edit_by_wrong_details@61c4eee0</td></tr>
+<tr>
+<td title='NBFC.TC_15_NBFC_Edit_By_wrong_id.nbfc_edit_by_wrong_id()'><b>nbfc_edit_by_wrong_id</b><br>Test class: NBFC.TC_15_NBFC_Edit_By_wrong_id</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_15_NBFC_Edit_By_wrong_id@353352b6</td></tr>
+<tr>
+<td title='Auth_Services.TC_7_Forgot_Password.Forgot_Password()'><b>Forgot_Password</b><br>Test class: Auth_Services.TC_7_Forgot_Password<br>Parameters: varshap</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_7_Forgot_Password@673fdbce</td></tr>
+<tr>
+<td title='User_service.TC_03_Last_Name_Staff_User_Post.staff_last_name_number()'><b>staff_last_name_number</b><br>Test class: User_service.TC_03_Last_Name_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_03_Last_Name_Staff_User_Post@247310d0</td></tr>
+<tr>
+<td title='NBFC.TC_11_NBFC_dashboard.nbfc_dashboard()'><b>nbfc_dashboard</b><br>Test class: NBFC.TC_11_NBFC_dashboard</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_11_NBFC_dashboard@609e8838</td></tr>
+<tr>
+<td title='Entity_Service.TC_03_Add_Entity.Add_Entity_All_Fields_Blank()'><b>Add_Entity_All_Fields_Blank</b><br>Test class: Entity_Service.TC_03_Add_Entity</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_03_Add_Entity@303cf2ba</td></tr>
+<tr>
+<td title='User_service.TC_15_comp_staff_relation.company_staff_relation_wrong_cid()'><b>company_staff_relation_wrong_cid</b><br>Test class: User_service.TC_15_comp_staff_relation</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_15_comp_staff_relation@4082ba93</td></tr>
+<tr>
+<td title='Add_NBFC.TC_03_NBFC_Email_Post.nbfc_email_special_char()'><b>nbfc_email_special_char</b><br>Test class: Add_NBFC.TC_03_NBFC_Email_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_03_NBFC_Email_Post@1033576a</td></tr>
+<tr>
+<td title='Entity_Service.TC_10_Discount_Del_Controller.Default_Flag_Controller()'><b>Default_Flag_Controller</b><br>Test class: Entity_Service.TC_10_Discount_Del_Controller</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_10_Discount_Del_Controller@4201c465</td></tr>
+<tr>
+<td title='Invoice_Services.TC_20_Get_Comment.Get_Invoice()'><b>Get_Invoice</b><br>Test class: Invoice_Services.TC_20_Get_Comment</td>
+<td></td>
+<td>0</td>
+<td>Invoice_Services.TC_20_Get_Comment@6c284af</td></tr>
+<tr>
+<td title='NBFC.TC_26_NBFC_disbursment.add_disbursbment_amount_SC_field_blank()'><b>add_disbursbment_amount_SC_field_blank</b><br>Test class: NBFC.TC_26_NBFC_disbursment</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_26_NBFC_disbursment@15a34df2</td></tr>
+<tr>
+<td title='User_service.TC_02_First_Name_Staff_User_Post.staff_first_name_SCLN()'><b>staff_first_name_SCLN</b><br>Test class: User_service.TC_02_First_Name_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_02_First_Name_Staff_User_Post@221a3fa4</td></tr>
+<tr>
+<td title='Entity_Service.TC_03_Add_Entity.Add_Entity_GSTin_Field_Blank()'><b>Add_Entity_GSTin_Field_Blank</b><br>Test class: Entity_Service.TC_03_Add_Entity</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_03_Add_Entity@303cf2ba</td></tr>
+<tr>
+<td title='User_service.TC_15_comp_staff_relation.company_staff_relation()'><b>company_staff_relation</b><br>Test class: User_service.TC_15_comp_staff_relation</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_15_comp_staff_relation@4082ba93</td></tr>
+<tr>
+<td title='User_service.TC_04_Email_Staff_User_Post.staff_email_first_numbers()'><b>staff_email_first_numbers</b><br>Test class: User_service.TC_04_Email_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_04_Email_Staff_User_Post@25be7b63</td></tr>
+<tr>
+<td title='User_service.TC_14_edit_User_Admin.edit_User_Admin()'><b>edit_User_Admin</b><br>Test class: User_service.TC_14_edit_User_Admin</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_14_edit_User_Admin@65987993</td></tr>
+<tr>
+<td title='User_service.TC_12_soft_Delete.Soft_delete()'><b>Soft_delete</b><br>Test class: User_service.TC_12_soft_Delete</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_12_soft_Delete@723ca036</td></tr>
+<tr>
+<td title='Add_NBFC.TC_13_NBFC_Bank_Holder_Name_Post.holder_name_SCLN()'><b>holder_name_SCLN</b><br>Test class: Add_NBFC.TC_13_NBFC_Bank_Holder_Name_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_13_NBFC_Bank_Holder_Name_Post@6d60fe40</td></tr>
+<tr>
+<td title='Invoice_Services.Client_Key_genrate.client_key_genrated()'><b>client_key_genrated</b><br>Test class: Invoice_Services.Client_Key_genrate</td>
+<td></td>
+<td>0</td>
+<td>Invoice_Services.Client_Key_genrate@35841320</td></tr>
+<tr>
+<td title='NBFC.TC_24_NBFC_reconcellation_one_field_blank.add_reconcellation_transaction_id_field_blank()'><b>add_reconcellation_transaction_id_field_blank</b><br>Test class: NBFC.TC_24_NBFC_reconcellation_one_field_blank</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_24_NBFC_reconcellation_one_field_blank@2767e23c</td></tr>
+<tr>
+<td title='NBFC.TC_02_NBFC_get_all_.nbfc_get_all()'><b>nbfc_get_all</b><br>Test class: NBFC.TC_02_NBFC_get_all_</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_02_NBFC_get_all_@1040be71</td></tr>
+<tr>
+<td title='Add_NBFC.TC_13_NBFC_Bank_Holder_Name_Post.holder_name_blank()'><b>holder_name_blank</b><br>Test class: Add_NBFC.TC_13_NBFC_Bank_Holder_Name_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_13_NBFC_Bank_Holder_Name_Post@6d60fe40</td></tr>
+<tr>
+<td title='Ledger_service.TC_01_calender.calender()'><b>calender</b><br>Test class: Ledger_service.TC_01_calender</td>
+<td></td>
+<td>0</td>
+<td>Ledger_service.TC_01_calender@4d1bf319</td></tr>
+<tr>
+<td title='Add_NBFC.TC_07_NBFC_State_Post.SCLN()'><b>SCLN</b><br>Test class: Add_NBFC.TC_07_NBFC_State_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_07_NBFC_State_Post@6e535154</td></tr>
+<tr>
+<td title='Add_NBFC.TC_11_NBFC_Branch_Name_Post.branch_name_number()'><b>branch_name_number</b><br>Test class: Add_NBFC.TC_11_NBFC_Branch_Name_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_11_NBFC_Branch_Name_Post@eadd4fb</td></tr>
+<tr>
+<td title='Add_NBFC.TC_04_NBFC_Mobile_Post.nbfc_mobile_letter()'><b>nbfc_mobile_letter</b><br>Test class: Add_NBFC.TC_04_NBFC_Mobile_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_04_NBFC_Mobile_Post@6f204a1a</td></tr>
+<tr>
+<td title='Entity_Service.TC_08_Add_Comment.Add_Comment_Id_Field_Blank()'><b>Add_Comment_Id_Field_Blank</b><br>Test class: Entity_Service.TC_08_Add_Comment</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_08_Add_Comment@73eb439a</td></tr>
+<tr>
+<td title='Add_NBFC.TC_12_NBFC_Bank_AC_Number_Post.nbfc_bank_acc_SCLN()'><b>nbfc_bank_acc_SCLN</b><br>Test class: Add_NBFC.TC_12_NBFC_Bank_AC_Number_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_12_NBFC_Bank_AC_Number_Post@1972e513</td></tr>
+<tr>
+<td title='Add_NBFC.TC_08_NBFC_Pin_Code_Post.nbfc_pincode_SCLN()'><b>nbfc_pincode_SCLN</b><br>Test class: Add_NBFC.TC_08_NBFC_Pin_Code_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_08_NBFC_Pin_Code_Post@4bdeaabb</td></tr>
+<tr>
+<td title='Ledger_service.TC_12_receivables_statements.get_receivable_statement()'><b>get_receivable_statement</b><br>Test class: Ledger_service.TC_12_receivables_statements</td>
+<td></td>
+<td>0</td>
+<td>Ledger_service.TC_12_receivables_statements@5965d37</td></tr>
+<tr>
+<td title='User_service.TC_02_First_Name_Staff_User_Post.staff_first_name_special_char()'><b>staff_first_name_special_char</b><br>Test class: User_service.TC_02_First_Name_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_02_First_Name_Staff_User_Post@221a3fa4</td></tr>
+<tr>
+<td title='Collection_Service.TC_03_Update_Single_Invoice.Update_Invoice()'><b>Update_Invoice</b><br>Test class: Collection_Service.TC_03_Update_Single_Invoice</td>
+<td></td>
+<td>0</td>
+<td>Collection_Service.TC_03_Update_Single_Invoice@19932c16</td></tr>
+<tr>
+<td title='Auth_Services.TC_2_SignUp_Negative_Scenario.Sign_Up()'><b>Sign_Up</b><br>Test class: Auth_Services.TC_2_SignUp_Negative_Scenario<br>Parameters: Varsha, Patil, 12345678, varsha.patiltech-trail.com, Xuriti#10</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_2_SignUp_Negative_Scenario@6caf0677</td></tr>
+<tr>
+<td title='Add_NBFC.TC_08_NBFC_Pin_Code_Post.nbfc_pincode_blank()'><b>nbfc_pincode_blank</b><br>Test class: Add_NBFC.TC_08_NBFC_Pin_Code_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_08_NBFC_Pin_Code_Post@4bdeaabb</td></tr>
+<tr>
+<td title='Auth_Services.TC_8_OTP_Verify.Verify_Otp()'><b>Verify_Otp</b><br>Test class: Auth_Services.TC_8_OTP_Verify<br>Parameters: 732788, 9763926686</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_8_OTP_Verify@6cb107fd</td></tr>
+<tr>
+<td title='User_service.TC_05_Mobile_Staff_User_Post.staff_mobile_more_10()'><b>staff_mobile_more_10</b><br>Test class: User_service.TC_05_Mobile_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_05_Mobile_Staff_User_Post@338fc1d8</td></tr>
+<tr>
+<td title='Add_NBFC.TC_08_NBFC_Pin_Code_Post.nbfc_pincode_capital_letter()'><b>nbfc_pincode_capital_letter</b><br>Test class: Add_NBFC.TC_08_NBFC_Pin_Code_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_08_NBFC_Pin_Code_Post@4bdeaabb</td></tr>
+<tr>
+<td title='User_service.TC_06_User_Role_Staff_User_Post.staff_role_special_char()'><b>staff_role_special_char</b><br>Test class: User_service.TC_06_User_Role_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_06_User_Role_Staff_User_Post@5745ca0e</td></tr>
+<tr>
+<td title='Add_NBFC.TC_07_NBFC_State_Post.nbfc_state_number()'><b>nbfc_state_number</b><br>Test class: Add_NBFC.TC_07_NBFC_State_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_07_NBFC_State_Post@6e535154</td></tr>
+<tr>
+<td title='Ledger_service.TC_13_receivable_agings.get_receivable_agings()'><b>get_receivable_agings</b><br>Test class: Ledger_service.TC_13_receivable_agings</td>
+<td></td>
+<td>0</td>
+<td>Ledger_service.TC_13_receivable_agings@5c80cf32</td></tr>
+<tr>
+<td title='Ledger_service.TC_06_company_details.company_details()'><b>company_details</b><br>Test class: Ledger_service.TC_06_company_details</td>
+<td></td>
+<td>3</td>
+<td>Ledger_service.TC_06_company_details@7e057f43</td></tr>
+<tr>
+<td title='Add_NBFC.TC_14_NBFC_IFSC_Post.IFSC_less_11()'><b>IFSC_less_11</b><br>Test class: Add_NBFC.TC_14_NBFC_IFSC_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_14_NBFC_IFSC_Post@5890e879</td></tr>
+<tr>
+<td title='Entity_Service.TC_02_Get_Entity_Details.Get_Entity_Details()'><b>Get_Entity_Details</b><br>Test class: Entity_Service.TC_02_Get_Entity_Details</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_02_Get_Entity_Details@43f02ef2</td></tr>
+<tr>
+<td title='User_service.TC_07_RegisterBy_Staff_User.staff_registerby_special_char()'><b>staff_registerby_special_char</b><br>Test class: User_service.TC_07_RegisterBy_Staff_User</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_07_RegisterBy_Staff_User@1750fbeb</td></tr>
+<tr>
+<td title='Add_NBFC.TC_03_NBFC_Email_Post.nbfc_email_exting()'><b>nbfc_email_exting</b><br>Test class: Add_NBFC.TC_03_NBFC_Email_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_03_NBFC_Email_Post@1033576a</td></tr>
+<tr>
+<td title='Collection_Service.TC_03_Update_Single_Invoice.Update_Invoice_Collection_Status_Blank()'><b>Update_Invoice_Collection_Status_Blank</b><br>Test class: Collection_Service.TC_03_Update_Single_Invoice</td>
+<td></td>
+<td>0</td>
+<td>Collection_Service.TC_03_Update_Single_Invoice@19932c16</td></tr>
+<tr>
+<td title='Auth_Services.TC_7_Forgot_Password.Forgot_Password()'><b>Forgot_Password</b><br>Test class: Auth_Services.TC_7_Forgot_Password<br>Parameters: varshapgmail.com</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_7_Forgot_Password@673fdbce</td></tr>
+<tr>
+<td title='NBFC.TC_25_NBFC_reconcellation_all_fields_blank.nbfc_allFields_blank_reconcellation()'><b>nbfc_allFields_blank_reconcellation</b><br>Test class: NBFC.TC_25_NBFC_reconcellation_all_fields_blank</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_25_NBFC_reconcellation_all_fields_blank@548a24a</td></tr>
+<tr>
+<td title='Auth_Services.TC_7_Forgot_Password.Forgot_Password()'><b>Forgot_Password</b><br>Test class: Auth_Services.TC_7_Forgot_Password<br>Parameters: varsha.patil@tech-trail.com</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_7_Forgot_Password@673fdbce</td></tr>
+<tr>
+<td title='Entity_Service.TC_15_Get_Comment.Get_Credit_Limit_Approval()'><b>Get_Credit_Limit_Approval</b><br>Test class: Entity_Service.TC_15_Get_Comment</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_15_Get_Comment@792b749c</td></tr>
+<tr>
+<td title='Add_NBFC.TC_04_NBFC_Mobile_Post.nbfc_mobile_blank()'><b>nbfc_mobile_blank</b><br>Test class: Add_NBFC.TC_04_NBFC_Mobile_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_04_NBFC_Mobile_Post@6f204a1a</td></tr>
+<tr>
+<td title='User_service.TC_02_First_Name_Staff_User_Post.staff_first_name_blank()'><b>staff_first_name_blank</b><br>Test class: User_service.TC_02_First_Name_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_02_First_Name_Staff_User_Post@221a3fa4</td></tr>
+<tr>
+<td title='Ledger_service.TC_11_get_transactions.get_transactions()'><b>get_transactions</b><br>Test class: Ledger_service.TC_11_get_transactions</td>
+<td></td>
+<td>0</td>
+<td>Ledger_service.TC_11_get_transactions@4a8355dd</td></tr>
+<tr>
+<td title='NBFC.TC_28_NBFC_get_reconcellations.reconcellation()'><b>reconcellation</b><br>Test class: NBFC.TC_28_NBFC_get_reconcellations</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_28_NBFC_get_reconcellations@302c971f</td></tr>
+<tr>
+<td title='Auth_Services.TC_4_Invalid_Scenario_Sign_In.Invalid_data()'><b>Invalid_data</b><br>Test class: Auth_Services.TC_4_Invalid_Scenario_Sign_In<br>Parameters: varsha.patiltech-trail.com, Xuriti#10</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_4_Invalid_Scenario_Sign_In@433defed</td></tr>
+<tr>
+<td title='Entity_Service.TC_01_Search_GST.Search_GST_By_Wrong_GSTin()'><b>Search_GST_By_Wrong_GSTin</b><br>Test class: Entity_Service.TC_01_Search_GST</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_01_Search_GST@1caa0244</td></tr>
+<tr>
+<td title='Auth_Services.TC_2_SignUp_Negative_Scenario.Sign_Up()'><b>Sign_Up</b><br>Test class: Auth_Services.TC_2_SignUp_Negative_Scenario<br>Parameters: , Patil, 12345678, varsha.patil@tech-trail.com, Xuriti#10</td>
+<td></td>
+<td>1</td>
+<td>Auth_Services.TC_2_SignUp_Negative_Scenario@6caf0677</td></tr>
+<tr>
+<td title='Add_NBFC.TC_14_NBFC_IFSC_Post.IFSC_more_11()'><b>IFSC_more_11</b><br>Test class: Add_NBFC.TC_14_NBFC_IFSC_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_14_NBFC_IFSC_Post@5890e879</td></tr>
+<tr>
+<td title='Add_NBFC.TC_09_NBFC_Interest_Post.interest_LN()'><b>interest_LN</b><br>Test class: Add_NBFC.TC_09_NBFC_Interest_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_09_NBFC_Interest_Post@72bc6553</td></tr>
+<tr>
+<td title='Auth_Services.TC_4_Invalid_Scenario_Sign_In.Invalid_data()'><b>Invalid_data</b><br>Test class: Auth_Services.TC_4_Invalid_Scenario_Sign_In<br>Parameters: varshatech-trail.com, Xuriti#11</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_4_Invalid_Scenario_Sign_In@433defed</td></tr>
+<tr>
+<td title='Add_NBFC.TC_13_NBFC_Bank_Holder_Name_Post.holder_name_number()'><b>holder_name_number</b><br>Test class: Add_NBFC.TC_13_NBFC_Bank_Holder_Name_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_13_NBFC_Bank_Holder_Name_Post@6d60fe40</td></tr>
+<tr>
+<td title='Auth_Services.TC_8_OTP_Verify.Verify_Otp()'><b>Verify_Otp</b><br>Test class: Auth_Services.TC_8_OTP_Verify<br>Parameters: , </td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_8_OTP_Verify@6cb107fd</td></tr>
+<tr>
+<td title='Collection_Service.TC_06_Get_Waver_Payment_History.get_waver_payment_history()'><b>get_waver_payment_history</b><br>Test class: Collection_Service.TC_06_Get_Waver_Payment_History</td>
+<td></td>
+<td>0</td>
+<td>Collection_Service.TC_06_Get_Waver_Payment_History@3e08ff24</td></tr>
+<tr>
+<td title='Add_NBFC.TC_04_NBFC_Mobile_Post.nbfc_mobile_more_10()'><b>nbfc_mobile_more_10</b><br>Test class: Add_NBFC.TC_04_NBFC_Mobile_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_04_NBFC_Mobile_Post@6f204a1a</td></tr>
+<tr>
+<td title='Auth_Services.TC_8_OTP_Verify.Verify_Otp()'><b>Verify_Otp</b><br>Test class: Auth_Services.TC_8_OTP_Verify<br>Parameters: 7788, </td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_8_OTP_Verify@6cb107fd</td></tr>
+<tr>
+<td title='Entity_Service.TC_09_Discount_Cal_Controller.Discount_Mapping_Controller()'><b>Discount_Mapping_Controller</b><br>Test class: Entity_Service.TC_09_Discount_Cal_Controller</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_09_Discount_Cal_Controller@3ad83a66</td></tr>
+<tr>
+<td title='Entity_Service.TC_05_Discount_Controller.Discount_Mapping_Controller()'><b>Discount_Mapping_Controller</b><br>Test class: Entity_Service.TC_05_Discount_Controller</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_05_Discount_Controller@710c2b53</td></tr>
+<tr>
+<td title='NBFC.TC_26_NBFC_disbursment.add_disbursbment_all_blank()'><b>add_disbursbment_all_blank</b><br>Test class: NBFC.TC_26_NBFC_disbursment</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_26_NBFC_disbursment@15a34df2</td></tr>
+<tr>
+<td title='Add_NBFC.TC_09_NBFC_Interest_Post.nbfc_interest_blank()'><b>nbfc_interest_blank</b><br>Test class: Add_NBFC.TC_09_NBFC_Interest_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_09_NBFC_Interest_Post@72bc6553</td></tr>
+<tr>
+<td title='Add_NBFC.TC_15_NBFC_Status_Post.nbfc_status_SCLN()'><b>nbfc_status_SCLN</b><br>Test class: Add_NBFC.TC_15_NBFC_Status_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_15_NBFC_Status_Post@7ce026d3</td></tr>
+<tr>
+<td title='Add_NBFC.TC_11_NBFC_Branch_Name_Post.setup()'><b>setup</b><br>Test class: Add_NBFC.TC_11_NBFC_Branch_Name_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_11_NBFC_Branch_Name_Post@eadd4fb</td></tr>
+<tr>
+<td title='Invoice_Services.TC_16_Filter_Invoice.Filter_Invoice()'><b>Filter_Invoice</b><br>Test class: Invoice_Services.TC_16_Filter_Invoice</td>
+<td></td>
+<td>0</td>
+<td>Invoice_Services.TC_16_Filter_Invoice@4a003cbe</td></tr>
+<tr>
+<td title='Auth_Services.TC_8_OTP_Verify.Verify_Otp()'><b>Verify_Otp</b><br>Test class: Auth_Services.TC_8_OTP_Verify<br>Parameters: , 9763926686</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_8_OTP_Verify@6cb107fd</td></tr>
+<tr>
+<td title='Auth_Services.TC_4_Invalid_Scenario_Sign_In.Invalid_data()'><b>Invalid_data</b><br>Test class: Auth_Services.TC_4_Invalid_Scenario_Sign_In<br>Parameters: , Xuriti#10</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_4_Invalid_Scenario_Sign_In@433defed</td></tr>
+<tr>
+<td title='Invoice_Services.TC_14_Download_Invoice.Download_Invoice()'><b>Download_Invoice</b><br>Test class: Invoice_Services.TC_14_Download_Invoice</td>
+<td></td>
+<td>0</td>
+<td>Invoice_Services.TC_14_Download_Invoice@2a8448fa</td></tr>
+<tr>
+<td title='User_service.TC_13_get_User_Details.get_User_Details()'><b>get_User_Details</b><br>Test class: User_service.TC_13_get_User_Details</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_13_get_User_Details@6440112d</td></tr>
+<tr>
+<td title='Add_NBFC.TC_08_NBFC_Pin_Code_Post.nbfc_pincode_more_6()'><b>nbfc_pincode_more_6</b><br>Test class: Add_NBFC.TC_08_NBFC_Pin_Code_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_08_NBFC_Pin_Code_Post@4bdeaabb</td></tr>
+<tr>
+<td title='Entity_Service.TC_01_Search_GST.Search_GST_By_Blank_Fields()'><b>Search_GST_By_Blank_Fields</b><br>Test class: Entity_Service.TC_01_Search_GST</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_01_Search_GST@1caa0244</td></tr>
+<tr>
+<td title='NBFC.TC_24_NBFC_reconcellation_one_field_blank.add_reconcellation_invoice_amount_field_blank()'><b>add_reconcellation_invoice_amount_field_blank</b><br>Test class: NBFC.TC_24_NBFC_reconcellation_one_field_blank</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_24_NBFC_reconcellation_one_field_blank@2767e23c</td></tr>
+<tr>
+<td title='NBFC.TC_10_NBFC_reconcellation_file_upload.nbfc_file_upload()'><b>nbfc_file_upload</b><br>Test class: NBFC.TC_10_NBFC_reconcellation_file_upload</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_10_NBFC_reconcellation_file_upload@23e84203</td></tr>
+<tr>
+<td title='Invoice_Services.TC_07_Delete_Invoice.Delete_Invoice()'><b>Delete_Invoice</b><br>Test class: Invoice_Services.TC_07_Delete_Invoice</td>
+<td></td>
+<td>0</td>
+<td>Invoice_Services.TC_07_Delete_Invoice@6e9a5ed8</td></tr>
+<tr>
+<td title='Add_NBFC.TC_03_NBFC_Email_Post.nbfc_email_blank()'><b>nbfc_email_blank</b><br>Test class: Add_NBFC.TC_03_NBFC_Email_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_03_NBFC_Email_Post@1033576a</td></tr>
+<tr>
+<td title='Entity_Service.TC_06_Discount_Mapping_Controller.Discount_Mapping_Controller()'><b>Discount_Mapping_Controller</b><br>Test class: Entity_Service.TC_06_Discount_Mapping_Controller</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_06_Discount_Mapping_Controller@cecf639</td></tr>
+<tr>
+<td title='Invoice_Services.TC_09_Get_Invoice_Comment.Get_Invoice_Comment()'><b>Get_Invoice_Comment</b><br>Test class: Invoice_Services.TC_09_Get_Invoice_Comment</td>
+<td></td>
+<td>0</td>
+<td>Invoice_Services.TC_09_Get_Invoice_Comment@8462f31</td></tr>
+<tr>
+<td title='Add_NBFC.TC_05_NBFC_Address_Post.nbfc_address_blank()'><b>nbfc_address_blank</b><br>Test class: Add_NBFC.TC_05_NBFC_Address_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_05_NBFC_Address_Post@536f2a7e</td></tr>
+<tr>
+<td title='Auth_Services.TC_6_Invalid_Scenario_SendOTP.Invalid_otp()'><b>Invalid_otp</b><br>Test class: Auth_Services.TC_6_Invalid_Scenario_SendOTP<br>Parameters: 8080630830225</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_6_Invalid_Scenario_SendOTP@7d9d0818</td></tr>
+<tr>
+<td title='Add_NBFC.TC_10_NBFC_Bank_Name.nbfc_bank_name_numbers()'><b>nbfc_bank_name_numbers</b><br>Test class: Add_NBFC.TC_10_NBFC_Bank_Name</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_10_NBFC_Bank_Name@43df23d3</td></tr>
+<tr>
+<td title='Entity_Service.TC_08_Add_Comment.Add_Comment()'><b>Add_Comment</b><br>Test class: Entity_Service.TC_08_Add_Comment</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_08_Add_Comment@73eb439a</td></tr>
+<tr>
+<td title='User_service.TC_06_User_Role_Staff_User_Post.staff_role_blank()'><b>staff_role_blank</b><br>Test class: User_service.TC_06_User_Role_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_06_User_Role_Staff_User_Post@5745ca0e</td></tr>
+<tr>
+<td title='NBFC.TC_24_NBFC_reconcellation_one_field_blank.add_reconcellation_payable_amount_field_blank()'><b>add_reconcellation_payable_amount_field_blank</b><br>Test class: NBFC.TC_24_NBFC_reconcellation_one_field_blank</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_24_NBFC_reconcellation_one_field_blank@2767e23c</td></tr>
+<tr>
+<td title='Add_NBFC.TC_02_NBFC_Name_Post.nbfc_SLN()'><b>nbfc_SLN</b><br>Test class: Add_NBFC.TC_02_NBFC_Name_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_02_NBFC_Name_Post@48e1f6c7</td></tr>
+<tr>
+<td title='Create_plan_get.TC_02_Create_Plan_Single_Get.test1_get_single_plan_create()'><b>test1_get_single_plan_create</b><br>Test class: Create_plan_get.TC_02_Create_Plan_Single_Get</td>
+<td></td>
+<td>0</td>
+<td>Create_plan_get.TC_02_Create_Plan_Single_Get@4c163e3</td></tr>
+<tr>
+<td title='NBFC.TC_26_NBFC_disbursment.add_disbursbment_transactionid_field_blank()'><b>add_disbursbment_transactionid_field_blank</b><br>Test class: NBFC.TC_26_NBFC_disbursment</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_26_NBFC_disbursment@15a34df2</td></tr>
+<tr>
+<td title='Entity_Service.TC_14_Credit_Limit.Credit_Limit()'><b>Credit_Limit</b><br>Test class: Entity_Service.TC_14_Credit_Limit</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_14_Credit_Limit@3f4faf53</td></tr>
+<tr>
+<td title='NBFC.TC_24_NBFC_reconcellation_one_field_blank.add_reconcellation_status_field_blank()'><b>add_reconcellation_status_field_blank</b><br>Test class: NBFC.TC_24_NBFC_reconcellation_one_field_blank</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_24_NBFC_reconcellation_one_field_blank@2767e23c</td></tr>
+<tr>
+<td title='NBFC.TC_24_NBFC_reconcellation_one_field_blank.add_reconcellation_utr_id_field_blank()'><b>add_reconcellation_utr_id_field_blank</b><br>Test class: NBFC.TC_24_NBFC_reconcellation_one_field_blank</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_24_NBFC_reconcellation_one_field_blank@2767e23c</td></tr>
+<tr>
+<td title='NBFC.TC_26_NBFC_disbursment.add_disbursbment()'><b>add_disbursbment</b><br>Test class: NBFC.TC_26_NBFC_disbursment</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_26_NBFC_disbursment@15a34df2</td></tr>
+<tr>
+<td title='Company_get_patch_buyer_and_Seller.TC_2_Patch_Company_Status.Company_Status_Update()'><b>Company_Status_Update</b><br>Test class: Company_get_patch_buyer_and_Seller.TC_2_Patch_Company_Status</td>
+<td></td>
+<td>0</td>
+<td>Company_get_patch_buyer_and_Seller.TC_2_Patch_Company_Status@7c37508a</td></tr>
+<tr>
+<td title='Add_NBFC.TC_04_NBFC_Mobile_Post.nbfc_mobile_less_10()'><b>nbfc_mobile_less_10</b><br>Test class: Add_NBFC.TC_04_NBFC_Mobile_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_04_NBFC_Mobile_Post@6f204a1a</td></tr>
+<tr>
+<td title='Auth_Services.TC_9_Unblock_user.User_Unblock()'><b>User_Unblock</b><br>Test class: Auth_Services.TC_9_Unblock_user<br>Parameters: , </td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_9_Unblock_user@59402b8f</td></tr>
+<tr>
+<td title='Add_NBFC.TC_03_NBFC_Email_Post.nbfc_email_missing_symbol()'><b>nbfc_email_missing_symbol</b><br>Test class: Add_NBFC.TC_03_NBFC_Email_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_03_NBFC_Email_Post@1033576a</td></tr>
+<tr>
+<td title='NBFC.TC_26_NBFC_disbursment.add_disbursbment_amount_field_blank()'><b>add_disbursbment_amount_field_blank</b><br>Test class: NBFC.TC_26_NBFC_disbursment</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_26_NBFC_disbursment@15a34df2</td></tr>
+<tr>
+<td title='Add_NBFC.TC_12_NBFC_Bank_AC_Number_Post.nbfc_bank_acc_special_char()'><b>nbfc_bank_acc_special_char</b><br>Test class: Add_NBFC.TC_12_NBFC_Bank_AC_Number_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_12_NBFC_Bank_AC_Number_Post@1972e513</td></tr>
+<tr>
+<td title='NBFC.TC_08_NBFC_mis_report.nbfc_mis_report()'><b>nbfc_mis_report</b><br>Test class: NBFC.TC_08_NBFC_mis_report</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_08_NBFC_mis_report@710636b0</td></tr>
+<tr>
+<td title='Add_NBFC.TC_12_NBFC_Bank_AC_Number_Post.nbfc_bank_acc_capital_letter()'><b>nbfc_bank_acc_capital_letter</b><br>Test class: Add_NBFC.TC_12_NBFC_Bank_AC_Number_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_12_NBFC_Bank_AC_Number_Post@1972e513</td></tr>
+<tr>
+<td title='Add_NBFC.TC_07_NBFC_State_Post.nbfc_state_special_char()'><b>nbfc_state_special_char</b><br>Test class: Add_NBFC.TC_07_NBFC_State_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_07_NBFC_State_Post@6e535154</td></tr>
+<tr>
+<td title='Entity_Service.TC_01_Search_GST.Search_GST()'><b>Search_GST</b><br>Test class: Entity_Service.TC_01_Search_GST</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_01_Search_GST@1caa0244</td></tr>
+<tr>
+<td title='Add_NBFC.TC_05_NBFC_Address_Post.nbfc_address_SCLN()'><b>nbfc_address_SCLN</b><br>Test class: Add_NBFC.TC_05_NBFC_Address_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_05_NBFC_Address_Post@536f2a7e</td></tr>
+<tr>
+<td title='Add_NBFC.TC_14_NBFC_IFSC_Post.IFSC_blank()'><b>IFSC_blank</b><br>Test class: Add_NBFC.TC_14_NBFC_IFSC_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_14_NBFC_IFSC_Post@5890e879</td></tr>
+<tr>
+<td title='User_service.TC_05_Mobile_Staff_User_Post.staff_mobile_less_10()'><b>staff_mobile_less_10</b><br>Test class: User_service.TC_05_Mobile_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_05_Mobile_Staff_User_Post@338fc1d8</td></tr>
+<tr>
+<td title='Entity_Service.TC_12_Check_Entity_Status.Check_Entities_Status_Inactive()'><b>Check_Entities_Status_Inactive</b><br>Test class: Entity_Service.TC_12_Check_Entity_Status</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_12_Check_Entity_Status@7bd7d6d6</td></tr>
+<tr>
+<td title='Auth_Services.TC_6_Invalid_Scenario_SendOTP.Invalid_otp()'><b>Invalid_otp</b><br>Test class: Auth_Services.TC_6_Invalid_Scenario_SendOTP<br>Parameters: 80806308</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_6_Invalid_Scenario_SendOTP@7d9d0818</td></tr>
+<tr>
+<td title='Add_NBFC.TC_13_NBFC_Bank_Holder_Name_Post.hodler_name_special_char()'><b>hodler_name_special_char</b><br>Test class: Add_NBFC.TC_13_NBFC_Bank_Holder_Name_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_13_NBFC_Bank_Holder_Name_Post@6d60fe40</td></tr>
+<tr>
+<td title='Auth_Services.TC_2_SignUp_Negative_Scenario.Sign_Up()'><b>Sign_Up</b><br>Test class: Auth_Services.TC_2_SignUp_Negative_Scenario<br>Parameters: Varsha, Patil, 8080630830, varsha.patil@tech-trail.com, Xuriti#10</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_2_SignUp_Negative_Scenario@6caf0677</td></tr>
+<tr>
+<td title='User_service.TC_03_Last_Name_Staff_User_Post.staff_last_name_blank()'><b>staff_last_name_blank</b><br>Test class: User_service.TC_03_Last_Name_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_03_Last_Name_Staff_User_Post@247310d0</td></tr>
+<tr>
+<td title='Auth_Services.TC_9_Unblock_user.User_Unblock()'><b>User_Unblock</b><br>Test class: Auth_Services.TC_9_Unblock_user<br>Parameters: , Allowed</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_9_Unblock_user@59402b8f</td></tr>
+<tr>
+<td title='Add_NBFC.TC_14_NBFC_IFSC_Post.IFSC_only_first_letter_small()'><b>IFSC_only_first_letter_small</b><br>Test class: Add_NBFC.TC_14_NBFC_IFSC_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_14_NBFC_IFSC_Post@5890e879</td></tr>
+<tr>
+<td title='Add_NBFC.TC_02_NBFC_Name_Post.nbfc_name_special_char()'><b>nbfc_name_special_char</b><br>Test class: Add_NBFC.TC_02_NBFC_Name_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_02_NBFC_Name_Post@48e1f6c7</td></tr>
+<tr>
+<td title='Add_NBFC.TC_06_NBFC_District_Post.nbfc_dist_special_char()'><b>nbfc_dist_special_char</b><br>Test class: Add_NBFC.TC_06_NBFC_District_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_06_NBFC_District_Post@7d900ecf</td></tr>
+<tr>
+<td title='Company_get_patch_buyer_and_Seller.TC_2_Patch_Company_Status.Company_Status_Field_Blank()'><b>Company_Status_Field_Blank</b><br>Test class: Company_get_patch_buyer_and_Seller.TC_2_Patch_Company_Status</td>
+<td></td>
+<td>0</td>
+<td>Company_get_patch_buyer_and_Seller.TC_2_Patch_Company_Status@7c37508a</td></tr>
+<tr>
+<td title='User_service.TC_05_Mobile_Staff_User_Post.staff_mobile_existing()'><b>staff_mobile_existing</b><br>Test class: User_service.TC_05_Mobile_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_05_Mobile_Staff_User_Post@338fc1d8</td></tr>
+<tr>
+<td title='Add_NBFC.TC_12_NBFC_Bank_AC_Number_Post.nbfc_bank_acc_less_9()'><b>nbfc_bank_acc_less_9</b><br>Test class: Add_NBFC.TC_12_NBFC_Bank_AC_Number_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_12_NBFC_Bank_AC_Number_Post@1972e513</td></tr>
+<tr>
+<td title='NBFC.TC_09_NBFC_mis_report_mapping.nbfc_mis_report_mapping()'><b>nbfc_mis_report_mapping</b><br>Test class: NBFC.TC_09_NBFC_mis_report_mapping</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_09_NBFC_mis_report_mapping@6f10d5b6</td></tr>
+<tr>
+<td title='Add_NBFC.TC_15_NBFC_Status_Post.nbfc_status_blank()'><b>nbfc_status_blank</b><br>Test class: Add_NBFC.TC_15_NBFC_Status_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_15_NBFC_Status_Post@7ce026d3</td></tr>
+<tr>
+<td title='Auth_Services.TC_8_OTP_Verify.Verify_Otp()'><b>Verify_Otp</b><br>Test class: Auth_Services.TC_8_OTP_Verify<br>Parameters: 7788, 9763926686</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_8_OTP_Verify@6cb107fd</td></tr>
+<tr>
+<td title='User_service.TC_06_User_Role_Staff_User_Post.staff_role_numbers()'><b>staff_role_numbers</b><br>Test class: User_service.TC_06_User_Role_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_06_User_Role_Staff_User_Post@5745ca0e</td></tr>
+<tr>
+<td title='NBFC.TC_26_NBFC_disbursment.add_disbursbment_invoiceno_field_blank()'><b>add_disbursbment_invoiceno_field_blank</b><br>Test class: NBFC.TC_26_NBFC_disbursment</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_26_NBFC_disbursment@15a34df2</td></tr>
+<tr>
+<td title='NBFC.TC_27_NBFC_get_disbursment.disbursment()'><b>disbursment</b><br>Test class: NBFC.TC_27_NBFC_get_disbursment</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_27_NBFC_get_disbursment@c430e6c</td></tr>
+<tr>
+<td title='User_service.TC_05_Mobile_Staff_User_Post.staff_mobile_SCLN()'><b>staff_mobile_SCLN</b><br>Test class: User_service.TC_05_Mobile_Staff_User_Post</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_05_Mobile_Staff_User_Post@338fc1d8</td></tr>
+<tr>
+<td title='Invoice_Services.TC_13_Get_Companies.Get_All_Invoice()'><b>Get_All_Invoice</b><br>Test class: Invoice_Services.TC_13_Get_Companies</td>
+<td></td>
+<td>0</td>
+<td>Invoice_Services.TC_13_Get_Companies@17bffc17</td></tr>
+<tr>
+<td title='Entity_Service.TC_03_Add_Entity.Company_Already_Registered()'><b>Company_Already_Registered</b><br>Test class: Entity_Service.TC_03_Add_Entity</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_03_Add_Entity@303cf2ba</td></tr>
+<tr>
+<td title='Add_NBFC.TC_03_NBFC_Email_Post.nbfc_email_without_dot_com()'><b>nbfc_email_without_dot_com</b><br>Test class: Add_NBFC.TC_03_NBFC_Email_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_03_NBFC_Email_Post@1033576a</td></tr>
+<tr>
+<td title='Add_NBFC.TC_03_NBFC_Email_Post.nbfc_email_double_symbol()'><b>nbfc_email_double_symbol</b><br>Test class: Add_NBFC.TC_03_NBFC_Email_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_03_NBFC_Email_Post@1033576a</td></tr>
+<tr>
+<td title='Collection_Service.TC_02_Get_Single_Invoices.Get_Invoice_Single()'><b>Get_Invoice_Single</b><br>Test class: Collection_Service.TC_02_Get_Single_Invoices</td>
+<td></td>
+<td>0</td>
+<td>Collection_Service.TC_02_Get_Single_Invoices@71075444</td></tr>
+<tr>
+<td title='Ledger_service.TC_09_get_dashboard_compony_hold.get_dashboard_company_status_hold()'><b>get_dashboard_company_status_hold</b><br>Test class: Ledger_service.TC_09_get_dashboard_compony_hold</td>
+<td></td>
+<td>0</td>
+<td>Ledger_service.TC_09_get_dashboard_compony_hold@304bb45b</td></tr>
+<tr>
+<td title='Auth_Services.TC_6_Invalid_Scenario_SendOTP.Invalid_otp()'><b>Invalid_otp</b><br>Test class: Auth_Services.TC_6_Invalid_Scenario_SendOTP<br>Parameters: null</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_6_Invalid_Scenario_SendOTP@7d9d0818</td></tr>
+<tr>
+<td title='Add_NBFC.TC_15_NBFC_Status_Post.nbfc_status_special_char()'><b>nbfc_status_special_char</b><br>Test class: Add_NBFC.TC_15_NBFC_Status_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_15_NBFC_Status_Post@7ce026d3</td></tr>
+<tr>
+<td title='Collection_Service.TC_01_Get_Overdue_Invoice.Get_Invoices()'><b>Get_Invoices</b><br>Test class: Collection_Service.TC_01_Get_Overdue_Invoice</td>
+<td></td>
+<td>0</td>
+<td>Collection_Service.TC_01_Get_Overdue_Invoice@1a245833</td></tr>
+<tr>
+<td title='Add_NBFC.TC_09_NBFC_Interest_Post.interest_less_2_digit()'><b>interest_less_2_digit</b><br>Test class: Add_NBFC.TC_09_NBFC_Interest_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_09_NBFC_Interest_Post@72bc6553</td></tr>
+<tr>
+<td title='NBFC.TC_21_NBFC_Mapping_no_seller_id.nbfc_no_seller_id()'><b>nbfc_no_seller_id</b><br>Test class: NBFC.TC_21_NBFC_Mapping_no_seller_id</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_21_NBFC_Mapping_no_seller_id@5b38c1ec</td></tr>
+<tr>
+<td title='User_service.TC_09_get_Rewards.get_rewards()'><b>get_rewards</b><br>Test class: User_service.TC_09_get_Rewards</td>
+<td></td>
+<td>0</td>
+<td>User_service.TC_09_get_Rewards@7ce69770</td></tr>
+<tr>
+<td title='Ledger_service.TC_03_ledger_report.ledger_report()'><b>ledger_report</b><br>Test class: Ledger_service.TC_03_ledger_report</td>
+<td></td>
+<td>0</td>
+<td>Ledger_service.TC_03_ledger_report@5b799640</td></tr>
+<tr>
+<td title='Auth_Services.TC_2_SignUp_Negative_Scenario.Sign_Up()'><b>Sign_Up</b><br>Test class: Auth_Services.TC_2_SignUp_Negative_Scenario<br>Parameters: Varsha@123, Patil, 12345678, varsha.patil@tech-trail.com, Xuriti#10</td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_2_SignUp_Negative_Scenario@6caf0677</td></tr>
+<tr>
+<td title='Auth_Services.TC_6_Invalid_Scenario_SendOTP.Invalid_otp()'><b>Invalid_otp</b><br>Test class: Auth_Services.TC_6_Invalid_Scenario_SendOTP<br>Parameters: </td>
+<td></td>
+<td>0</td>
+<td>Auth_Services.TC_6_Invalid_Scenario_SendOTP@7d9d0818</td></tr>
+<tr>
+<td title='Add_NBFC.TC_09_NBFC_Interest_Post.interest_letter()'><b>interest_letter</b><br>Test class: Add_NBFC.TC_09_NBFC_Interest_Post</td>
+<td></td>
+<td>0</td>
+<td>Add_NBFC.TC_09_NBFC_Interest_Post@72bc6553</td></tr>
+<tr>
+<td title='Entity_Service.TC_07_Default_Flag_Controller.Default_Flag_Controller()'><b>Default_Flag_Controller</b><br>Test class: Entity_Service.TC_07_Default_Flag_Controller</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_07_Default_Flag_Controller@70ed52de</td></tr>
+<tr>
+<td title='NBFC.TC_13_NBFC_invoive.nbfc_invoice()'><b>nbfc_invoice</b><br>Test class: NBFC.TC_13_NBFC_invoive</td>
+<td></td>
+<td>0</td>
+<td>NBFC.TC_13_NBFC_invoive@45d84a20</td></tr>
+<tr>
+<td title='Entity_Service.TC_13_Get_Entity.Get_Entities()'><b>Get_Entities</b><br>Test class: Entity_Service.TC_13_Get_Entity</td>
+<td></td>
+<td>0</td>
+<td>Entity_Service.TC_13_Get_Entity@76494737</td></tr>
+</table><p>
+</body>
+</html>

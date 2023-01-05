@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <test thread-count="5" name="Test">
+  
+    <packages>
+      <package name="com.xuriti.api_NBFC_Post"/>
+      <package name="com.xuriti.api_user_service"/>
+      <package name="com.xuriti.api_Invoice_Services"/>
+      <package name="com.xuriti.api_ledger_service"/>
+      <package name="com.xuriti.api_NBFC"/>
+      <package name="com.xuriti.api_Auth_Services"/>
+      
+      <package name="com.xuriti.api_company_get_patch_buyer_and_Seller"/>
+      <package name="com.xuriti.api_collection_Service"/>
+      <package name="com.xuriti.api_create_plan_get"/>
+      <package name="com.xuriti.api_entity_Service"/>
+    </packages>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

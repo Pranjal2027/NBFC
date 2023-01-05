@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [e_mandate_Suite]">
+  <test thread-count="4" name="e_mandate_Test(failed)">
+    <classes>
+      <class name="e_mandate.click_on_Next_Page">
+        <methods>
+          <include name="per_page"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- e_mandate.click_on_Next_Page -->
+      <class name="e_mandate.Items_per_page_20">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="per_page"/>
+        </methods>
+      </class> <!-- e_mandate.Items_per_page_20 -->
+      <class name="e_mandate.Items_per_page_50">
+        <methods>
+          <include name="per_page"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- e_mandate.Items_per_page_50 -->
+      <class name="e_mandate.E_Mandate_search_by_Invoice_No">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="per_page"/>
+        </methods>
+      </class> <!-- e_mandate.E_Mandate_search_by_Invoice_No -->
+    </classes>
+  </test> <!-- e_mandate_Test(failed) -->
+</suite> <!-- Failed suite [e_mandate_Suite] -->

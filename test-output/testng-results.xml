@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-05T17:22:27 IST" name="Default suite" finished-at="2023-01-05T17:22:29 IST" duration-ms="2265">
+    <groups>
+    </groups>
+    <test started-at="2023-01-05T17:22:27 IST" name="Default test" finished-at="2023-01-05T17:22:29 IST" duration-ms="2265">
+      <class name="Entity_Service.TC_16_Get_Gst_Data">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Entity_Service.TC_16_Get_Gst_Data@2b48a640]" started-at="2023-01-05T17:22:27 IST" name="setup" finished-at="2023-01-05T17:22:29 IST" duration-ms="2091" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Gst_Data()[pri:0, instance:Entity_Service.TC_16_Get_Gst_Data@2b48a640]" started-at="2023-01-05T17:22:29 IST" name="Gst_Data" finished-at="2023-01-05T17:22:29 IST" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Gst_Data -->
+      </class> <!-- Entity_Service.TC_16_Get_Gst_Data -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

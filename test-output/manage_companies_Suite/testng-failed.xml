@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [manage_companies_Suite]">
+  <test thread-count="5" name="manage_companies_Test(failed)">
+    <classes>
+      <class name="manage_companies.edit_credit_limit">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Hold_comp"/>
+        </methods>
+      </class> <!-- manage_companies.edit_credit_limit -->
+      <class name="manage_companies.edit_state">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Hold_comp"/>
+        </methods>
+      </class> <!-- manage_companies.edit_state -->
+      <class name="manage_companies.Company_status_inactive">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="comp_status_inactive"/>
+        </methods>
+      </class> <!-- manage_companies.Company_status_inactive -->
+      <class name="manage_companies.Credit_plan_selection_6">
+        <methods>
+          <include name="credit_plan_select"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.Credit_plan_selection_6 -->
+      <class name="manage_companies.Credit_plan_selection_1">
+        <methods>
+          <include name="credit_plan_select"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.Credit_plan_selection_1 -->
+      <class name="manage_companies.Search_by_company_name">
+        <methods>
+          <include name="Search_by_comp_name"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.Search_by_company_name -->
+      <class name="manage_companies.edit_district">
+        <methods>
+          <include name="Hold_comp"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.edit_district -->
+      <class name="manage_companies.edit_admin_email_add">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Hold_comp"/>
+        </methods>
+      </class> <!-- manage_companies.edit_admin_email_add -->
+      <class name="manage_companies.Credit_plan_selection_2">
+        <methods>
+          <include name="credit_plan_select"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.Credit_plan_selection_2 -->
+      <class name="manage_companies.edit_pin_code">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Hold_comp"/>
+        </methods>
+      </class> <!-- manage_companies.edit_pin_code -->
+      <class name="manage_companies.edit_company_mobile_num">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Hold_comp"/>
+        </methods>
+      </class> <!-- manage_companies.edit_company_mobile_num -->
+      <class name="manage_companies.Credit_plan_selection_5">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="credit_plan_select"/>
+        </methods>
+      </class> <!-- manage_companies.Credit_plan_selection_5 -->
+      <class name="manage_companies.Approve_company">
+        <methods>
+          <include name="Approve_comp"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.Approve_company -->
+      <class name="manage_companies.Items_per_page_50">
+        <methods>
+          <include name="Manage_comp"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.Items_per_page_50 -->
+      <class name="manage_companies.edit_admin_name">
+        <methods>
+          <include name="Hold_comp"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.edit_admin_name -->
+      <class name="manage_companies.edit_credit_plan">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Hold_comp"/>
+        </methods>
+      </class> <!-- manage_companies.edit_credit_plan -->
+      <class name="manage_companies.edit_CIN">
+        <methods>
+          <include name="Hold_comp"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.edit_CIN -->
+      <class name="manage_companies.Company_status_Approved">
+        <methods>
+          <include name="Comp_status_approved"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.Company_status_Approved -->
+      <class name="manage_companies.edit_annual_turnover">
+        <methods>
+          <include name="Hold_comp"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.edit_annual_turnover -->
+      <class name="manage_companies.Hold_Company">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Hold_comp"/>
+        </methods>
+      </class> <!-- manage_companies.Hold_Company -->
+      <class name="manage_companies.edit_company_pan">
+        <methods>
+          <include name="Hold_comp"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.edit_company_pan -->
+      <class name="manage_companies.edit_TAN">
+        <methods>
+          <include name="Hold_comp"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.edit_TAN -->
+      <class name="manage_companies.Company_status_Hold">
+        <methods>
+          <include name="comp_status_hold"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.Company_status_Hold -->
+      <class name="manage_companies.edit_gst_no">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Hold_comp"/>
+        </methods>
+      </class> <!-- manage_companies.edit_gst_no -->
+      <class name="manage_companies.edit_company_name">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Hold_comp"/>
+        </methods>
+      </class> <!-- manage_companies.edit_company_name -->
+      <class name="manage_companies.Credit_plan_selection_3">
+        <methods>
+          <include name="credit_plan_select"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.Credit_plan_selection_3 -->
+      <class name="manage_companies.Credit_plan_selection_4">
+        <methods>
+          <include name="credit_plan_select"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.Credit_plan_selection_4 -->
+      <class name="manage_companies.date_range_based_on_the_registration">
+        <methods>
+          <include name="Date_range_based_on_registration"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.date_range_based_on_the_registration -->
+      <class name="manage_companies.edit_Intrest">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Hold_comp"/>
+        </methods>
+      </class> <!-- manage_companies.edit_Intrest -->
+      <class name="manage_companies.Search_by_gst">
+        <methods>
+          <include name="Search_GST"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.Search_by_gst -->
+      <class name="manage_companies.Credit_plan_selection_7">
+        <methods>
+          <include name="credit_plan_select"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.Credit_plan_selection_7 -->
+      <class name="manage_companies.edit_company_email_add">
+        <methods>
+          <include name="Hold_comp"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.edit_company_email_add -->
+      <class name="manage_companies.click_on_Next_Page">
+        <methods>
+          <include name="Manage_comp"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.click_on_Next_Page -->
+      <class name="manage_companies.edit_type_of_business">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Hold_comp"/>
+        </methods>
+      </class> <!-- manage_companies.edit_type_of_business -->
+      <class name="manage_companies.Items_per_page_10">
+        <methods>
+          <include name="Manage_comp"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.Items_per_page_10 -->
+      <class name="manage_companies.edit_admin_mobile_num">
+        <methods>
+          <include name="Hold_comp"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.edit_admin_mobile_num -->
+    </classes>
+  </test> <!-- manage_companies_Test(failed) -->
+</suite> <!-- Failed suite [manage_companies_Suite] -->
