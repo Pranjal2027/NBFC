@@ -46,7 +46,7 @@ public class TC_12_soft_Delete extends Base_Class
 		      body(request.toJSONString()).
 		      header("authorization"," Bearer " + token).
 		   when().
-		      delete(CONTEXTPATH + "user/635b62926b206c7eb71a1274").
+		      delete(CONTEXTPATH + "user/63aa7ecccd025999c1fdf19a").
 		   then().
 		   log().all().
 		    statusCode(200);

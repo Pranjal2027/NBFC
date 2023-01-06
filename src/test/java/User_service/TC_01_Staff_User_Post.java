@@ -54,9 +54,9 @@ public class TC_01_Staff_User_Post extends Base_Class
 		    request.put("firstName", "Varsha");
 		    request.put("lastName", "Patil");
 		    request.put("email", "varsha@xuriti.com");
-		    request.put("mobileNumber", "4058961211");
+		    request.put("mobileNumber", "8080630840");
 		    request.put("userRole", "xuritiAdmin");
-		    request.put("registeredBy", "62a1ad3af497ef97fecf8e74");
+		    request.put("registeredBy", "63aa7ecccd025999c1fdf19a");
 		    
 		    given().
 			   contentType("application/json").

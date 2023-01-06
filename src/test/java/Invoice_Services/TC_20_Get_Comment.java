@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import Collection_Service.Base_Class_3;
+import Collection_Service.Base_Class;
 import Collection_Service.TokenProvider;
 
 import org.testng.annotations.BeforeClass;
@@ -25,7 +25,7 @@ import static io.restassured.RestAssured.given;
 import org.json.simple.JSONObject;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-public class TC_20_Get_Comment extends Base_Class_3
+public class TC_20_Get_Comment extends Base_Class
 {
 	   @BeforeClass
 		public void setup()
@@ -45,7 +45,7 @@ public class TC_20_Get_Comment extends Base_Class_3
 			   body(request.toJSONString()).
 			   header("authorization","Bearer " + token).
 			  when().
-			      get(CONTEXTPATH + "invoice/635a43e10f3f22b2a90ebd21/get-comments").  //company id  
+			      get(CONTEXTPATH + "invoice/63b571f4b8018b0ada27c434/get-comments").  //company id  
 			   then().log().all().
 			    statusCode(200); 
 		}

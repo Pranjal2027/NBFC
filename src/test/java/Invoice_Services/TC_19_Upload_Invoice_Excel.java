@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import Collection_Service.Base_Class_3;
+import Collection_Service.Base_Class;
 import Collection_Service.TokenProvider;
 
 import org.testng.annotations.BeforeClass;
@@ -30,7 +30,7 @@ import org.testng.annotations.Test;
 
 import io.restassured.response.Response;
 
-public class TC_19_Upload_Invoice_Excel extends Base_Class_3
+public class TC_19_Upload_Invoice_Excel extends Base_Class
 {
     @BeforeClass
 	public void setup()

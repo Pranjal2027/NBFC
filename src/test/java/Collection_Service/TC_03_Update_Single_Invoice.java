@@ -47,7 +47,7 @@ public class TC_03_Update_Single_Invoice extends Base_Class_1
 			   body(request.toJSONString()).
 			   header("authorization","Bearer " + token).
 			  when().
-			      patch(CONTEXTPATH + "collection/invoices/6387eebcdb8d58f2d01d4b68").   
+			      patch(CONTEXTPATH + "collection/invoices/63b571f4b8018b0ada27c434").   
 			   then().log().all().
 			    statusCode(200); 
 		}

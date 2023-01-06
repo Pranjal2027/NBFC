@@ -44,7 +44,7 @@ public class TC_02_Get_Single_Invoices extends Base_Class
 			   body(request.toJSONString()).
 			   header("authorization","Bearer " + token).
 			  when().
-			      get(CONTEXTPATH + "collection/invoices/6387eebcdb8d58f2d01d4b68").   
+			      get(CONTEXTPATH + "collection/invoices/63b571f4b8018b0ada27c434").   
 			   then().log().all().
 			    statusCode(200); 
 		}

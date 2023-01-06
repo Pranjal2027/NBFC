@@ -42,14 +42,14 @@ public class TC_01_calender extends Base_Class
 		String token =TokenProvider.getInstance().getToken();
 		request.put("month","08");
 		request.put("year","2022");
-		request.put("buyer","62e421a17880367c03e9fd14");
+		request.put("buyer","63b01da78bcfecd283d1e7fe");
 		 
  		 given().
 		   contentType("application/json").
 		      body(request.toJSONString()).
 		      header("authorization"," Bearer " + token).
 		   when().
-		      get(CONTEXTPATH + "ledger/companies/calendar?buyer=62e421a17880367c03e9fd14&month=08&year=2022").
+		      get(CONTEXTPATH + "ledger/companies/calendar?buyer=63b01da78bcfecd283d1e7fe&month=08&year=2022").
 		   then().
 		   log().all().
 		    statusCode(200);
@@ -61,14 +61,14 @@ public class TC_01_calender extends Base_Class
 		String token =TokenProvider.getInstance().getToken();
 		request.put("month","08");
 		request.put("year","2022");
-		request.put("buyer","635a43e10f3f22b2a90ebd21");
+		request.put("buyer","63b01da78bcfecd283d1e7fe");
 		 
  		 given().
 		   contentType("application/json").
 		      body(request.toJSONString()).
 		      header("authorization"," Bearer " + token).
 		   when().
-		      get(CONTEXTPATH + "ledger/companies/calendar?buyer=635a43e10f3f22b2a90ebd21&month=10&year=2022").
+		      get(CONTEXTPATH + "ledger/companies/calendar?buyer=63b01da78bcfecd283d1e7fe&month=10&year=2022").
 		   then().
 		   log().all().
 		    statusCode(200);

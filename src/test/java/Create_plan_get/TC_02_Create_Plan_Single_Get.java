@@ -45,7 +45,7 @@ public class TC_02_Create_Plan_Single_Get extends Base_Class
 	}
 	
     @Test
-	public void test1_get_single_plan_create()
+	public void get_single_plan_create()
 	{
 		JSONObject request=new JSONObject();
 		String token =TokenProvider.getInstance().getToken();
@@ -55,7 +55,7 @@ public class TC_02_Create_Plan_Single_Get extends Base_Class
 		      body(request.toJSONString()).
 		      header("authorization"," Bearer " + token).
 		   when().
-		      get(CONTEXTPATH + "entity/635f60284bc95163ca68b8ad/credit-plans/635f6dfc4bc95163ca68c153").
+		      get(CONTEXTPATH + "entity/63b3cf711a63c90faa0655c9/credit-plans/63b3cf661a63c90faa065539").
 		   then().
 		   log().all().
 		    statusCode(200);

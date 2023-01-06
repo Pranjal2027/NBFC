@@ -45,7 +45,7 @@ public class TC_05_Get_Entity_summary extends Base_Class_3
 		   body(request.toJSONString()).
 		   header("authorization","Bearer " + token).
 		  when().
-		      get(CONTEXTPATH + "invoice/wa?type=summary&company=6368bfc4ae20447f4dcc2646").  //company id  
+		      get(CONTEXTPATH + "invoice/wa?type=summary&company=63b01da78bcfecd283d1e7fe").  //company id  
 		   then().log().all().
 		    statusCode(200); 
 	}

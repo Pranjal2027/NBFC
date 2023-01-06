@@ -56,7 +56,7 @@ public class TC_04_Email_Staff_User_Post extends Base_Class
 		    request.put("email", "");
 		    request.put("mobileNumber", "8888888888");
 		    request.put("userRole", "xuritiAdmin");
-		    request.put("registeredBy", "62a1ad3af497ef97fecf8e74");
+		    request.put("registeredBy", "63aa7ecccd025999c1fdf19a");
 		    
 		    given().
 			   contentType("application/json").
@@ -79,7 +79,7 @@ public class TC_04_Email_Staff_User_Post extends Base_Class
 		    request.put("email", "&^%$@xuriti.com");
 		    request.put("mobileNumber", "9999999999");
 		    request.put("userRole", "xuritiAdmin");
-		    request.put("registeredBy", "62a1ad3af497ef97fecf8e74");
+		    request.put("registeredBy", "63aa7ecccd025999c1fdf19a");
 		    
 		    given().
 			   contentType("application/json").
@@ -103,7 +103,7 @@ public class TC_04_Email_Staff_User_Post extends Base_Class
 		    request.put("email", "jj@xuriticom");
 		    request.put("mobileNumber", "1010101010");
 		    request.put("userRole", "xuritiAdmin");
-		    request.put("registeredBy", "62a1ad3af497ef97fecf8e74");
+		    request.put("registeredBy", "63aa7ecccd025999c1fdf19a");
 		    
 		    given().
 			   contentType("application/json").
@@ -127,7 +127,7 @@ public class TC_04_Email_Staff_User_Post extends Base_Class
 		    request.put("email", "1234@xuriti.com");
 		    request.put("mobileNumber", "0101010101");
 		    request.put("userRole", "xuritiAdmin");
-		    request.put("registeredBy", "62a1ad3af497ef97fecf8e74");
+		    request.put("registeredBy", "63aa7ecccd025999c1fdf19a");
 		    
 		    given().
 			   contentType("application/json").
@@ -150,7 +150,7 @@ public class TC_04_Email_Staff_User_Post extends Base_Class
 		    request.put("email", "kkxuriti.com");
 		    request.put("mobileNumber", "2020202020");
 		    request.put("userRole", "xuritiAdmin");
-		    request.put("registeredBy", "62a1ad3af497ef97fecf8e74");
+		    request.put("registeredBy", "63aa7ecccd025999c1fdf19a");
 		    
 		    given().
 			   contentType("application/json").
@@ -173,7 +173,7 @@ public class TC_04_Email_Staff_User_Post extends Base_Class
 		    request.put("email", "llo@gmail.com");
 		    request.put("mobileNumber", "3030303030");
 		    request.put("userRole", "xuritiAdmin");
-		    request.put("registeredBy", "62a1ad3af497ef97fecf8e74");
+		    request.put("registeredBy", "63aa7ecccd025999c1fdf19a");
 		    
 		    given().
 			   contentType("application/json").
@@ -197,7 +197,7 @@ public class TC_04_Email_Staff_User_Post extends Base_Class
 		    request.put("email", "varsha.patil@xuriti.com");
 		    request.put("mobileNumber", "4040404040");
 		    request.put("userRole", "xuritiAdmin");
-		    request.put("registeredBy", "62a1ad3af497ef97fecf8e74");
+		    request.put("registeredBy", "63aa7ecccd025999c1fdf19a");
 		    
 		    given().
 			   contentType("application/json").

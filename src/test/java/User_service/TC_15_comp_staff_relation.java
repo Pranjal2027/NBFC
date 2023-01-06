@@ -41,7 +41,7 @@ public class TC_15_comp_staff_relation extends Base_Class
 		String token =TokenProvider.getInstance().getToken();
 		
 		
-		request.put("company","635f622c4bc95163ca68bbd7");
+		request.put("company","63b01da78bcfecd283d1e7fe");
 		
 		
 		 
@@ -50,7 +50,7 @@ public class TC_15_comp_staff_relation extends Base_Class
 		      body(request.toJSONString()).
 		      header("authorization"," Bearer " + token).
 		   when().
-		      post(CONTEXTPATH + "user/staff/635b62926b206c7eb71a1274").
+		      post(CONTEXTPATH + "user/staff/63aa7ecccd025999c1fdf19a").
 		   then().
 		   log().all().
 		    statusCode(200);

@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import Collection_Service.Base_Class_3;
+import Collection_Service.Base_Class;
 import Collection_Service.TokenProvider;
 
 import org.testng.annotations.BeforeClass;
@@ -27,7 +27,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class TC_10_Interest_Cal extends Base_Class_3
+public class TC_10_Interest_Cal extends Base_Class
 {
 
 
@@ -66,7 +66,7 @@ public class TC_10_Interest_Cal extends Base_Class_3
 		   body(request.toJSONString()).
 		   header("authorization","Bearer " + token).
 		  when().
-		      post(CONTEXTPATH + "invoice/interest?buyer=6368bfc4ae20447f4dcc2646").  //Buyer id
+		      post(CONTEXTPATH + "invoice/interest?buyer=63b3cc771a63c90faa0653fb").  //Buyer id
 		      
 		   then().log().all().
 		    statusCode(200); 

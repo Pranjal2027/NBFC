@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import Collection_Service.Base_Class;
 import Collection_Service.Base_Class_3;
 import Collection_Service.TokenProvider;
 
@@ -38,7 +39,7 @@ import org.json.simple.JSONObject;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class TC_03_Search_Invoice_By_Buyer_Id_type extends Base_Class_3
+public class TC_03_Search_Invoice_By_Buyer_Id_type extends Base_Class
 {
    @BeforeClass
 	public void setup()
@@ -58,7 +59,7 @@ public class TC_03_Search_Invoice_By_Buyer_Id_type extends Base_Class_3
 		   body(request.toJSONString()).
 		   header("authorization","Bearer " + token).
 		  when().
-		      get(CONTEXTPATH + "invoice/search-invoice/635a43e10f3f22b2a90ebd21/buyer").  //company id  
+		      get(CONTEXTPATH + "invoice/search-invoice/63b01da78bcfecd283d1e7fe/buyer").  //company id  
 		   then().log().all().
 		    statusCode(200); 
 	}

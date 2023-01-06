@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import Collection_Service.Base_Class_3;
+import Collection_Service.Base_Class;
 import Collection_Service.TokenProvider;
 
 import org.testng.annotations.BeforeClass;
@@ -26,7 +26,7 @@ import org.json.simple.JSONObject;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-public class TC_08_Add_Invoice_Comment extends Base_Class_3
+public class TC_08_Add_Invoice_Comment extends Base_Class
 {
 	
 
@@ -35,9 +35,9 @@ public class TC_08_Add_Invoice_Comment extends Base_Class_3
 	{
 		Object [][] data= new Object[1][3];
 		
-		data[0][0]="635f532a6b206c7eb71a151c";
+		data[0][0]="63aa7ecccd025999c1fdf19a";
 		data[0][1]="Trail";
-		data[0][2]="638ded61e9437438d4d01473";
+		data[0][2]="63b3d3de6cd25311c90d32be";
 		
 		
 		return data;

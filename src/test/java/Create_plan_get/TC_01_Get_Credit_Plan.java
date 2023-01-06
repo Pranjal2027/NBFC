@@ -55,7 +55,7 @@ public class TC_01_Get_Credit_Plan extends Base_Class
 		      body(request.toJSONString()).
 		      header("authorization"," Bearer " + token).
 		   when().
-		      get(CONTEXTPATH + "entity/62a8548c21d5976aea2f1787/credit-plans").
+		      get(CONTEXTPATH + "entity/63b01da78bcfecd283d1e7fe/credit-plans").
 		   then().
 		   log().all().
 		    statusCode(200);

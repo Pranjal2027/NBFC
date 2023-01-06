@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import Collection_Service.Base_Class_3;
+import Collection_Service.Base_Class;
 import Collection_Service.TokenProvider;
 
 import org.testng.annotations.BeforeClass;
@@ -25,7 +25,7 @@ import static io.restassured.RestAssured.given;
 import org.json.simple.JSONObject;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-public class TC_07_Delete_Invoice extends Base_Class_3
+public class TC_07_Delete_Invoice extends Base_Class
 {
 
 	@BeforeClass
@@ -46,7 +46,7 @@ public class TC_07_Delete_Invoice extends Base_Class_3
 		   body(request.toJSONString()).
 		   header("authorization","Bearer " + token).
 		  when().
-		      delete(CONTEXTPATH + "invoice/invoices/639711aec8091dab1061aa94/635b62926b206c7eb71a1274").  //invoice id  and user xuriti admin id 
+		      delete(CONTEXTPATH + "invoice/invoices/63b3d3de6cd25311c90d325d/63aa7ecccd025999c1fdf19a").  //invoice id  and user xuriti admin id 
 		   then().log().all().
 		    statusCode(202); 
 	}

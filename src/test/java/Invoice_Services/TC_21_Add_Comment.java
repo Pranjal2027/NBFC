@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import Collection_Service.Base_Class_3;
+import Collection_Service.Base_Class;
 import Collection_Service.TokenProvider;
 
 import org.testng.annotations.BeforeClass;
@@ -25,7 +25,7 @@ import static io.restassured.RestAssured.given;
 import org.json.simple.JSONObject;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-public class TC_21_Add_Comment extends Base_Class_3
+public class TC_21_Add_Comment extends Base_Class
 {
     @BeforeClass
 	public void setup()
@@ -38,9 +38,9 @@ public class TC_21_Add_Comment extends Base_Class_3
 	{
 		JSONObject request=new JSONObject();
 		String token =TokenProvider.getInstance().getToken();
-		request.put("userId","635a40826b206c7eb71a1156");
+		request.put("userId","63aa7ecccd025999c1fdf19a");
 		request.put("comment","ok");
-		request.put("id","635f63680626d4f485cd775b");
+		request.put("id","63b571f4b8018b0ada27c434");
 		 
  		 given().
 		   contentType("application/json").

@@ -52,7 +52,7 @@ public class TC_14_edit_User_Admin extends Base_Class
 		      body(request.toJSONString()).
 		      header("authorization"," Bearer " + token).
 		   when().
-		      put(CONTEXTPATH + "user/635b62926b206c7eb71a1274").
+		      put(CONTEXTPATH + "user/63aa7ecccd025999c1fdf19a").
 		   then().
 		   log().all().
 		    statusCode(200);

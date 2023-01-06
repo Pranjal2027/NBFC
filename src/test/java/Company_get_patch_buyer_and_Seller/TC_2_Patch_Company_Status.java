@@ -58,7 +58,7 @@ public class TC_2_Patch_Company_Status extends Base_Class
 		      body(request.toJSONString()).
 		      header("authorization"," Bearer " + token).
 		   when().
-		   patch(CONTEXTPATH + "entity/status-entity/636391acdcf3c6dc8dd32db3").  //company id
+		   patch(CONTEXTPATH + "entity/status-entity/63b01da78bcfecd283d1e7fe").  //company id
 		   then().
 		   log().all().
 		    statusCode(200);
@@ -79,7 +79,7 @@ public class TC_2_Patch_Company_Status extends Base_Class
 		      body(request.toJSONString()).
 		      header("authorization"," Bearer " + token).
 		   when().
-		   patch(CONTEXTPATH + "entity/status-entity/636391acdcf3c6dc8dd32db3").  //company id
+		   patch(CONTEXTPATH + "entity/status-entity/63b01da78bcfecd283d1e7fe").  //company id
 		   then().
 		   log().all().
 		    statusCode(200);
@@ -101,7 +101,7 @@ public void Company_Status_Field_Blank()
 	      body(request.toJSONString()).
 	      header("authorization"," Bearer " + token).
 	   when().
-	   patch(CONTEXTPATH + "entity/status-entity/636391acdcf3c6dc8dd32db3").  //company id
+	   patch(CONTEXTPATH + "entity/status-entity/63b01da78bcfecd283d1e7fe").  //company id
 	   then().
 	   log().all().
 	    statusCode(200);
@@ -122,7 +122,7 @@ public void Company_Status_Msg_Field_Blank()
 	      body(request.toJSONString()).
 	      header("authorization"," Bearer " + token).
 	   when().
-	   patch(CONTEXTPATH + "entity/status-entity/636391acdcf3c6dc8dd32db3").  //company id
+	   patch(CONTEXTPATH + "entity/status-entity/63b01da78bcfecd283d1e7fe").  //company id
 	   then().
 	   log().all().
 	    statusCode(200);

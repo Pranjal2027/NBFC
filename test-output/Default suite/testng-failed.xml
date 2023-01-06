@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Entity_Service.TC_10_Discount_Del_Controller">
+      <class name="Entity_Service.TC_06_Discount_Mapping_Controller">
         <methods>
-          <include name="Default_Flag_Controller"/>
+          <include name="Discount_Mapping_Controller"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- Entity_Service.TC_10_Discount_Del_Controller -->
+      </class> <!-- Entity_Service.TC_06_Discount_Mapping_Controller -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

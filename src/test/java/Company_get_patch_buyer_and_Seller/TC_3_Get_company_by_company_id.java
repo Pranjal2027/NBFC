@@ -56,7 +56,7 @@ public class TC_3_Get_company_by_company_id extends Base_Class
 		   body(request.toJSONString()).
 		   header("authorization","Bearer " + token).
 		  when().
-		      get(CONTEXTPATH + "entity/entity/636391acdcf3c6dc8dd32db3").    //Company id
+		      get(CONTEXTPATH + "entity/entity/63b01da78bcfecd283d1e7fe").    //Company id
 		   then().log().all().
 		    statusCode(200);
 		  

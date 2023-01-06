@@ -23,7 +23,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
-public class TC_06_Get_Waver_Payment_History extends Base_Class_1
+public class TC_06_Get_Waver_Payment_History extends Base_Class_2
 {
 	   @BeforeClass
 		public void setup()
