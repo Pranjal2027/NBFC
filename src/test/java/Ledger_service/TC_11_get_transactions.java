@@ -16,6 +16,8 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import static io.restassured.RestAssured.given;
 
 import org.json.simple.JSONObject;
@@ -46,7 +48,7 @@ public class TC_11_get_transactions extends Base_Class
 		      body(request.toJSONString()).
 		      header("authorization"," Bearer " + token).
 		   when().
-		      get(CONTEXTPATH + "ledger/statement/buyers/635a43e10f3f22b2a90ebd21").
+		      get(CONTEXTPATH + "ledger/statement/buyers/63b01da78bcfecd283d1e7fe").
 		   then().
 		   log().all().
 		    statusCode(200);

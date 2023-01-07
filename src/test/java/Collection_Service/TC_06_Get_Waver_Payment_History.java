@@ -16,6 +16,8 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import static io.restassured.RestAssured.given;
 
 import org.json.simple.JSONObject;
@@ -37,13 +39,13 @@ public class TC_06_Get_Waver_Payment_History extends Base_Class_2
 		   
 		  JSONObject request=new JSONObject();
 		  String token = TokenProvider.getInstance().getToken();
-			request.put("inv_date","2022-11-23");
+			request.put("inv_date","2023-03-05");
 			   given().
 			   contentType("application/json").
 			   body(request.toJSONString()).
 			   header("authorization","Bearer " + token).
 			  when().
-			      get(CONTEXTPATH + "ledger/companies/receivables_statement?inv_date=2022-11-23").   
+			      get(CONTEXTPATH + "ledger/companies/receivables_statement?inv_date=2023-03-05").   
 			   then().log().all().
 			    statusCode(200); 
 		}

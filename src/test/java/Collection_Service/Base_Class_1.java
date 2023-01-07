@@ -30,7 +30,7 @@ public class Base_Class_1 {
 		   {
 			   JSONObject request=new JSONObject();
 //			   
-			   request.put("email","shraddha.biradar@xuriti.com");
+			   request.put("email","abhishek.parihar@xuriti.com");
 	           request.put("password", "Xuriti#10");
 			   
 //		     System.out.println(request.toJSONString());

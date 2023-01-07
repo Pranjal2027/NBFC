@@ -16,6 +16,8 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import static io.restassured.RestAssured.given;
 
 import org.json.simple.JSONObject;
@@ -23,7 +25,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
-public class TC_04_Get_Payment_Invoice_History extends Base_Class_1
+public class TC_04_Get_Payment_Invoice_History extends Base_Class
 {
 	   @BeforeClass
 		public void setup()
@@ -43,7 +45,7 @@ public class TC_04_Get_Payment_Invoice_History extends Base_Class_1
 			   body(request.toJSONString()).
 			   header("authorization","Bearer " + token).
 			  when().
-			      get(CONTEXTPATH + "collection/invoices/638b2bbba10cd1f2eb800ec0/paymenthistory").   
+			      get(CONTEXTPATH + "collection/invoices/63b6b984d77136d0bee8733f/paymenthistory").   
 			   then().log().all().
 			    statusCode(200); 
 		}

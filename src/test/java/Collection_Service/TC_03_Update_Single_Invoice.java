@@ -16,6 +16,8 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import static io.restassured.RestAssured.given;
 
 import org.json.simple.JSONObject;
@@ -24,7 +26,7 @@ import org.testng.annotations.Test;
 
 
 
-public class TC_03_Update_Single_Invoice extends Base_Class_1
+public class TC_03_Update_Single_Invoice extends Base_Class
 {
 	   @BeforeClass
 		public void setup()

@@ -16,6 +16,8 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import static io.restassured.RestAssured.given;
 
 import org.json.simple.JSONObject;
@@ -44,7 +46,7 @@ public class TC_02_Get_Single_Invoices extends Base_Class
 			   body(request.toJSONString()).
 			   header("authorization","Bearer " + token).
 			  when().
-			      get(CONTEXTPATH + "collection/invoices/63b571f4b8018b0ada27c434").   
+			      get(CONTEXTPATH + "collection/invoices/63b3d3de6cd25311c90d32be").   
 			   then().log().all().
 			    statusCode(200); 
 		}

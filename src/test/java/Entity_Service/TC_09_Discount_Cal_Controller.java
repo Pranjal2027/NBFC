@@ -16,6 +16,8 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import static io.restassured.RestAssured.given;
 
 import org.json.simple.JSONObject;
@@ -46,7 +48,7 @@ public class TC_09_Discount_Cal_Controller extends Base_Class
 			   body(request.toJSONString()).
 			   header("authorization","Bearer " + token).
 			  when().
-			      get(CONTEXTPATH + "entity/63b3cc771a63c90faa0653fb/invoices/63b3d3de6cd25311c90d32be/discounts").   
+			      get(CONTEXTPATH + "entity/63b01da78bcfecd283d1e7fe/invoices/63b6b984d77136d0bee8733f/discounts").   
 			   then().log().all().
 			    statusCode(200); 
 		}

@@ -5,6 +5,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import Collection_Service.Base_Class;
 import Collection_Service.TokenProvider;
@@ -48,7 +50,7 @@ public class TC_10_get_mis_report_invoice extends Base_Class
 		      body(request.toJSONString()).
 		      header("authorization"," Bearer " + token).
 		   when().
-		      get(CONTEXTPATH + "ledger/mis/invoices/invoicesuploaded?days=10&buyer_id=6368aa7222021adc2f14428a").
+		      get(CONTEXTPATH + "ledger/mis/invoices/invoicesuploaded?days=10&buyer_id=63b01da78bcfecd283d1e7fe").
 		   then().
 		   log().all().
 		    statusCode(200);

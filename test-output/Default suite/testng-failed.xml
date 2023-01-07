@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Entity_Service.TC_06_Discount_Mapping_Controller">
+      <class name="Collection_Service.TC_04_Get_Payment_Invoice_History">
         <methods>
-          <include name="Discount_Mapping_Controller"/>
+          <include name="Get_Payment_Invoice_History"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- Entity_Service.TC_06_Discount_Mapping_Controller -->
+      </class> <!-- Collection_Service.TC_04_Get_Payment_Invoice_History -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
