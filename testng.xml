@@ -7,7 +7,6 @@
       <class name="NBFC.TC_07_NBFC_get_Mapped"/>
       <class name="Ledger_service.TC_04_get_ledger"/>
       <class name="NBFC.TC_24_NBFC_reconcellation_one_field_blank"/>
-      <class name="Entity_Service.TC_05_Discount_Controller"/>
       <class name="Invoice_Services.TC_21_Add_Comment"/>
       <class name="Company_get_patch_buyer_and_Seller.TC_1_All_Company"/>
       
@@ -54,9 +53,9 @@
       <class name="Auth_Services.TC_5_Send_OTP"/>
       <class name="Add_NBFC.TC_10_NBFC_Bank_Name"/>
       <class name="Add_NBFC.TC_13_NBFC_Bank_Holder_Name_Post"/>
-      <class name="Invoice_Services.TC_19_Upload_Invoice_Excel"/>
+     
       <class name="Entity_Service.TC_15_Get_Comment"/>
-      <class name="NBFC.TC_10_NBFC_reconcellation_file_upload"/>
+     
       <class name="Entity_Service.TC_08_Add_Comment"/>
       <class name="Invoice_Services.TC_08_Add_Invoice_Comment"/>
       <class name="NBFC.TC_28_NBFC_get_reconcellations"/>
