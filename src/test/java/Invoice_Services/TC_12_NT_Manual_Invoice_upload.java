@@ -22,6 +22,8 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import static io.restassured.RestAssured.given;
 
 import java.io.File;
@@ -32,17 +34,17 @@ import org.json.simple.JSONObject;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import Collection_Service.Base_Class_3;
+import Collection_Service.Base_Class_2;
 import Collection_Service.TokenProvider;
 import Invoice_Services.Bill_details.Discount_summary;
 import Invoice_Services.Bill_details.Gst_summary;
 import Invoice_Services.Bill_details.Tax_summary;
 
 
-public class TC_12_NT_Manual_Invoice_upload extends Base_Class_3 
+public class TC_12_NT_Manual_Invoice_upload extends Base_Class_2 
 {
 	JSONObject request;
-	String key = null;
+
     @BeforeClass
 	public void setup()
 	{
@@ -50,119 +52,60 @@ public class TC_12_NT_Manual_Invoice_upload extends Base_Class_3
 		
 	}
     
-	 @Test
+	 @Test 
 	public  void  Client_Key_Genrated() throws InterruptedException 
 	{
-		 List<Gst_summary> gst = new ArrayList<Gst_summary>();
-		 Bill_details.Gst_summary gs = new Bill_details.Gst_summary();
-		 gs.setCgst("615.93");
-		 gs.setSgst("615.93");
-		 gs.setIgst("50.00");
-		 gs.setTotal_tax("1231.86");
-		 
-		 gst.add(gs);
-		 
-		 List<Discount_summary> dst = new ArrayList<Discount_summary>();
-		 Bill_details.Discount_summary ds = new Bill_details.Discount_summary();
-		 ds.setCash_discount("360.20-");
-		 ds.setSpecial_discount("0.00");
-		 ds.setIn_bill_discount("0.00");
-		 ds.setTotal_discount("360.20-");
-		 
-		 dst.add(ds);
-		 
-		 List<Tax_summary> tst = new ArrayList<Tax_summary>();
-		 Bill_details.Tax_summary ts = new Bill_details.Tax_summary();
-		 ts.setTcs_based_value("8075.66");
-		 ts.setTcs_tax_value("0.00");
-		 
-		 tst.add(ts);
-		 
-		 
-		 
-		 Bill_details bd = new Bill_details();
-		 bd.setGst_summary(gst);
-		 bd.setDiscount_summary(dst);
-		 bd.setTax_summary(tst);
-		 
-		 ServiceDetailsPOJO sp = new ServiceDetailsPOJO(); 
-		 sp.setInvoice_amount("10000");  	// Valid Amount
-		 sp.setInvoice_date("2023-11-11");	// INVALID DATE
-		 sp.setInvoice_number("VK_5");
-		 sp.setInvoice_type("IN");
-		 sp.setBuyerGST("27AAACT7872Q2ZF");
-		 sp.setSellerGST("27AAHFC3944Q1ZV");
-		 sp.setBill_details(bd);
-		 
-		 
-		request=new JSONObject();
-		String token =TokenProvider.getInstance().getToken();
-		
-		 request.put("userID", "63aa7ecccd025999c1fdf19a");
-		
-	    
-		 
-		String key =  given().
-		   contentType("application/json").
-		      body(request.toJSONString()).
-		      header("authorization"," Bearer " + token).
-		   when().
-		      post(CONTEXTPATH + "auth/gen-client-key").
-		   then().
-		   log().body().extract().response().path("clientKey");
-		
-		
-		Thread.sleep(5000);
-		
-		System.out.println(key);
-		
-		JSONObject request=new JSONObject();
-		//String token =TokenProvider.getInstance().getToken();
-		File Jsondata = new File ("/home/tech-trail/MY-workspace/API_USER/Resources/upload.json");
-		 given().
-		   contentType("application/json").
-		      body(sp).
-		      header("x-user-id","635f532a6b206c7eb71a151c").
-		      header("x-client-key", key ).
-		      header("authorization"," Bearer " + token).
-		   when().
-		      post(CONTEXTPATH + "invoice/upload-invoice-manual").
-		   then().
-		   log().all().
-		    statusCode(200);
-		   System.out.println("Invoice uploaded");
-		   
-		 //  System.out.println(key);
-		
-		
-		 
+		 request=new JSONObject();
+			String token =TokenProvider.getInstance().getToken();
+			
+			 request.put("userID", "63b3cb905804f9c99c756cc6");
+			
+		    
+			 
+			String key =  given().
+			   contentType("application/json").
+			      body(request.toJSONString()).
+			      header("authorization"," Bearer " + token).
+			   when().
+			      post(CONTEXTPATH + "auth/gen-client-key").
+			   then().
+			   log().body().extract().response().path("clientKey");
+			
+			
+			Thread.sleep(5000);
+			
+			System.out.println(key);
+			
+			JSONObject request=new JSONObject();
+			String token1 =TokenProvider.getInstance().getToken();
+			//File Jsondata = new File ("/home/pranjal/Documents/eclips_project/Micro_Services_Admin_Pannel_REST_APIs/Invoice_manual.json");
+			  request.put("invoice_number","P_00000");
+			  request.put("buyerGST","07AABCF8078M1Z3");
+			  request.put("sellerGST","24AAACC1206D1ZM");
+			  request.put("invoice_type","IN");
+			  request.put("invoice_amount","");
+			  request.put("invoice_date","2023-01-10");
+			  request.put("total_tax_amount","500");
+			
+			given().
+			    contentType("application/json").
+			    body(request.toJSONString()).
+			      header("x-user-id","63b3cb905804f9c99c756cc6").
+			      header("x-client-key", key ).
+			      header("authorization"," Bearer " + token1).
+			   when().
+			      post(CONTEXTPATH + "invoice/upload-invoice-manual").
+			   then().
+			   log().all().
+			    statusCode(200);
+			   System.out.println("Invoice uploaded");
+			   
+			 //  System.out.println(key);
+			
+			
+			 
+			
+		}
 		
 	}
-	
-    @Test (enabled = false)
-	public void Upload_Invoice()
-	{
 
-		JSONObject request=new JSONObject();
-		String token =TokenProvider.getInstance().getToken();
-		File Jsondata = new File ("/home/tech-trail/MY-workspace/API_USER/Resources/upload.json");
-	
-		 
-		 
-		 given().
-		   contentType("application/json").
-		      body(Jsondata).
-		      header("x-user-id","635f532a6b206c7eb71a151c").
-		      header("x-client-key", key ).
-		      header("authorization"," Bearer " + token).
-		   when().
-		      post(CONTEXTPATH + "invoice/upload-invoice-manual").
-		   then().
-		   log().all().
-		    statusCode(200);
-		   System.out.println("Invoice uploaded");
-		   
-		   
-	}
-	
-}

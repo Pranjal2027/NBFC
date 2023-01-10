@@ -6,9 +6,17 @@
       <class name="Collection_Service.TC_04_Get_Payment_Invoice_History">
         <methods>
           <include name="Get_Payment_Invoice_History"/>
+          <include name="Get_Payment_Invoice_History_No_Payment"/>
           <include name="setup"/>
         </methods>
       </class> <!-- Collection_Service.TC_04_Get_Payment_Invoice_History -->
+      <class name="Collection_Service.TC_03_Update_Single_Invoice">
+        <methods>
+          <include name="setup"/>
+          <include name="Update_Invoice"/>
+          <include name="Update_Invoice_Comment_Blank"/>
+        </methods>
+      </class> <!-- Collection_Service.TC_03_Update_Single_Invoice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,6 +2,9 @@ package Auth_Services;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+
+import io.restassured.response.Response;
+
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
@@ -9,6 +12,8 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
@@ -25,7 +30,7 @@ import static io.restassured.RestAssured.given;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
-public class TC_2_SignUp_Negative_Scenario extends Base_Class_3
+public class TC_2_SignUp_Field_validation extends Base_Class_3
 {
 	@DataProvider(name="signup")
 	public Object [][] Register_user()
@@ -129,7 +134,7 @@ public class TC_2_SignUp_Negative_Scenario extends Base_Class_3
 	 
 	   System.out.println(request.toJSONString());
 	
-	   given().
+	  given().
 	   contentType("application/json").
 	      body(request.toJSONString()).
 	   when().
@@ -137,6 +142,7 @@ public class TC_2_SignUp_Negative_Scenario extends Base_Class_3
 	   then().log().all().
 	    statusCode(200);
 	//   System.out.println("Enter First Valid Name");
+	  
 	}
      
 //     @Test

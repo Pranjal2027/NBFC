@@ -9,6 +9,7 @@ public class ServiceDetailsPOJO
 		private String buyerGST;
 		private String sellerGST;
 		private Bill_details bill_details;
+		private String total_tax_amount;
 		public String getInvoice_amount() {
 			return invoice_amount;
 		}
@@ -50,6 +51,10 @@ public class ServiceDetailsPOJO
 		}
 		public void setBill_details(Bill_details bill_details) {
 			this.bill_details = bill_details;
+		}
+		public void total_tax_amount(String total_tax_amount) {
+			
+			this.total_tax_amount=total_tax_amount;
 		}
 		
 		

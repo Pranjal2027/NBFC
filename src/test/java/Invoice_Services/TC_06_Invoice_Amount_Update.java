@@ -7,6 +7,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import Collection_Service.Base_Class;
 import Collection_Service.Base_Class_3;
@@ -69,7 +71,7 @@ public class TC_06_Invoice_Amount_Update extends Base_Class
 		   body(request.toJSONString()).
 		   header("authorization","Bearer " + token).
 		  when().
-		      patch(CONTEXTPATH + "invoice/invoices/63b3d3de6cd25311c90d325d/63aa7ecccd025999c1fdf19a").  //invoice id  
+		      patch(CONTEXTPATH + "invoice/invoices/63b7cc1eb578e2ac153747c1/63aa7ecccd025999c1fdf19a").  //invoice id  
 		   then().log().all().
 		    statusCode(200); 
 	}

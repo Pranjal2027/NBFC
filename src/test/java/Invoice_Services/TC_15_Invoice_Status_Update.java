@@ -7,8 +7,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
-import Collection_Service.Base_Class_3;
+import Collection_Service.Base_Class;
+import Collection_Service.Base_Class_2;
 import Collection_Service.TokenProvider;
 
 import org.testng.annotations.BeforeClass;
@@ -39,7 +42,7 @@ import org.json.simple.JSONObject;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class TC_15_Invoice_Status_Update extends Base_Class_3
+public class TC_15_Invoice_Status_Update extends Base_Class_2
 {
      @BeforeClass
 	public void setup()
@@ -54,9 +57,9 @@ public class TC_15_Invoice_Status_Update extends Base_Class_3
 		String token= TokenProvider.getInstance().getToken();
 		
 		request.put("status", "Confirmed");
-		request.put("reason", "Yes");
-		request.put("invoiceID", "635f66070626d4f485cd77d0");
-				
+		request.put("user_comment", "Yes");
+		request.put("invoiceID", "63b7cc1eb578e2ac153747c1");
+		request.put("userConsentGiven",true);
 		 given().
 		   contentType("application/json").
 		      body(request.toJSONString()).

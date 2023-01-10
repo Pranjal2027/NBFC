@@ -7,6 +7,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import Collection_Service.Base_Class;
 import Collection_Service.Base_Class_3;
@@ -44,7 +46,7 @@ public class TC_02_Get_Invoice_Details extends Base_Class
 		   JSONObject request=new JSONObject();
 		   String token = TokenProvider.getInstance().getToken();
 		
-		   request.put("invoiceID", "63b3d3de6cd25311c90d325d"); //invoice id 
+		   request.put("invoiceID", "63b7cd453606092886120ddd"); //invoice id 
 		   
 		   given().
 		   contentType("application/json").

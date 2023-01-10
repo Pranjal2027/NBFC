@@ -18,6 +18,8 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import static io.restassured.RestAssured.given;
 
 import org.json.simple.JSONObject;
@@ -26,9 +28,10 @@ import org.testng.annotations.Test;
 
 import Auth_Services.Base_Class_3;
 import Collection_Service.Base_Class;
+import Collection_Service.Base_Class_2;
 import Collection_Service.TokenProvider;
 
-public class TC_13_Get_Entity extends Base_Class
+public class TC_13_Get_Entity extends Base_Class_2
 {
 	   @BeforeClass
 		public void setup()
@@ -48,7 +51,7 @@ public class TC_13_Get_Entity extends Base_Class
 			   body(request.toJSONString()).
 			   header("authorization","Bearer " + token).
 			  when().
-			      get(CONTEXTPATH + "entity/entity/63b53862666bd921b3b3c449").   
+			      get(CONTEXTPATH + "entity/entity/63b3cc771a63c90faa0653fb").   
 			   then().log().all().
 			    statusCode(200); 
 		}

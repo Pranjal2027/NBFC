@@ -7,6 +7,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import Collection_Service.Base_Class;
 import Collection_Service.TokenProvider;
@@ -49,7 +51,7 @@ public class TC_09_Get_Invoice_Comment extends Base_Class
 		   body(request.toJSONString()).
 		   header("authorization","Bearer " + token).
 		  when().
-		      get(CONTEXTPATH + "invoice/63b571f4b8018b0ada27c434/get-comments").  //invoice  id  
+		      get(CONTEXTPATH + "invoice/63b7cc1eb578e2ac153747c1/get-comments").  //invoice  id  
 		   then().log().all().
 		    statusCode(200); 
 	}

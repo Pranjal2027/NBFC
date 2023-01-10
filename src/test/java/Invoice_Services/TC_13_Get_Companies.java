@@ -7,6 +7,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import Collection_Service.Base_Class_3;
 import Collection_Service.TokenProvider;
@@ -50,7 +52,7 @@ public class TC_13_Get_Companies extends Base_Class_3
 		   body(request.toJSONString()).
 		   header("authorization","Bearer " + token).
 		  when().
-		      get(CONTEXTPATH + "invoice/wa?type=invoice&phoneNumber=7972512892&company=6360c525b3eb796c37a0ee53").  
+		      get(CONTEXTPATH + "invoice/wa?type=invoice&phoneNumber=9763926686&company=63b01da78bcfecd283d1e7fe").  
 		   then().log().all().
 		    statusCode(200);  
 		  

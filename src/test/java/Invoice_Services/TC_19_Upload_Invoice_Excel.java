@@ -7,6 +7,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import Collection_Service.Base_Class;
 import Collection_Service.TokenProvider;
@@ -57,7 +59,7 @@ public class TC_19_Upload_Invoice_Excel extends Base_Class
 //		   then().
 //		   log().all().
 //		    statusCode(200);
- 		File testUploadFile = new File ("/home/pranjal/Documents/eclips_project/Micro_Services_Admin_Pannel_REST_APIs/Invoice/invoice_upload1.xlsx");
+ 		File testUploadFile = new File ("/home/pranjal/Downloads/invoice_upload1.xlsx");
 		//RestAssured.baseURI = "https://dev.xuriti.app/adminpanel/api/nbfcs/";
 		Response response = given()
 				.multiPart(testUploadFile)

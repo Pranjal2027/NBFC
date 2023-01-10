@@ -1,0 +1,9 @@
+{
+ " invoice_amount" : "1000" ,
+  "invoice_number" :" P_1000" ,
+ " buyerGST" : "07AABCF8078M1Z3" ,
+ " sellerGST" :" 24AAACC1206D1ZM ",
+ " invoice_type ": "IN" ,
+  "invoice_date ": "2023-01-10" ,
+  "total_tax_amount ": "200 "
+}
