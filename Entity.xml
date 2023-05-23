@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Entity">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Entity_Service.TC_09_Discount_Cal_Controller"/>
+      <class name="Entity_Service.TC_07_Default_Flag_Controller"/>
+      <class name="Entity_Service.TC_17_local_entites"/>
+      <class name="Entity_Service.TC_14_Credit_Limit"/>
+      <class name="Entity_Service.TC_11_Fetch_Entities"/>
+      <class name="Entity_Service.TC_10_Discount_Del_Controller"/>
+      <class name="Entity_Service.TC_15_Get_Comment"/>
+      <class name="Entity_Service.TC_05_Discount_Controller"/>
+      <class name="Entity_Service.TC_08_Add_Comment"/>
+      <class name="Entity_Service.TC_12_Check_Entity_Status"/>
+      <class name="Entity_Service.TC_04_Update_Company"/>
+      <class name="Entity_Service.TC_03_Add_Entity"/>
+      <class name="Entity_Service.TC_02_Get_Entity_Details"/>
+      <class name="Entity_Service.TC_06_Discount_Mapping_Controller"/>
+      <class name="Entity_Service.TC_01_Search_GST"/>
+      <class name="Entity_Service.TC_16_Get_Gst_Data"/>
+      <class name="Entity_Service.TC_13_Get_Entity"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

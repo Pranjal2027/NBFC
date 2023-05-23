@@ -1,0 +1,2 @@
+seller_gst,buyer_gst,invoice_number,invoice_amount,gst_amount,invoice_date,payment_due_date,invoice_id,batch_id,Payable_amount,credit_number,settled_amount,nbfc_transaction_id,transaction_date,nbfc_status,utr_id,nbfc_remarks
+27AAACB2100P1ZX,20AAACB2894G1Z1,BV_3,5000.00,500.00,Sat Jan 14 2023 05:30:00 GMT+0530 (India Standard Time),Fri Jan 20 2023 05:30:00 GMT+0530 (India Standard Time),63c62d9d8acce55037860b61,xuriti_batch_04gsx,5275.00,undefined,undefined

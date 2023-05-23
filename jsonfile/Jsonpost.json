@@ -1,0 +1,28 @@
+{
+  "createdBy":"63aa7ecccd025999c1fdf19a",
+  "plan_name": "varshaplanss",
+  "credit_period": 15,
+  "default_plan": false,
+  "payment_interval": 3,
+  
+    "discount_slabs": [
+    {
+      "slab": 1,
+      "from": 0,
+      "to": 10,
+      "discount": 5
+    },
+    {
+      "slab": 2,
+      "from": 11,
+      "to": 20,
+      "discount": 3
+    },
+    {
+      "slab": 3,
+      "from": 21,
+      "to": 30,
+      "discount": 2
+    }
+  ]
+}

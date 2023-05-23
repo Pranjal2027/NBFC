@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Chaining.TC_01_Apload_invoice"/>
+      <class name="Chaining.TC_02_Binvoice_Status_Update"/>
+      <class name="Chaining.TC_03_Cpay"/>
+      <class name="Chaining.TC_04_Dpayment_history"/>
+      <class name="Chaining.TC_05_Epayment_Status"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

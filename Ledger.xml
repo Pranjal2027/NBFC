@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Ledger">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Ledger_service.TC_06_company_details"/>
+      <class name="Ledger_service.TC_01_calender"/>
+      <class name="Ledger_service.TC_16_disbursment_statement"/>
+      <class name="Ledger_service.TC_13_receivable_agings"/>
+      <class name="Ledger_service.TC_15_invoice_summary"/>
+      <class name="Ledger_service.TC_12_receivables_statements"/>
+      <class name="Ledger_service.TC_03_ledger_report"/>
+      <class name="Ledger_service.TC_14_total_invoice_details"/>
+      <class name="Ledger_service.TC_04_get_ledger"/>
+      <class name="Ledger_service.TC_09_get_dashboard_compony_hold"/>
+      <class name="Ledger_service.TC_07_nbfc_dashboard"/>
+      <class name="Ledger_service.TC_10_get_mis_report_invoice"/>
+      <class name="Ledger_service.TC_11_get_transactions"/>
+      <class name="Ledger_service.TC_02_get_MIS_report"/>
+      <class name="Ledger_service.TC_05_payment_details"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

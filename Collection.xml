@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Collection">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Collection_Service.TC_03_Update_Single_Invoice"/>
+      <class name="Collection_Service.TC_05_Get_Collection_Staff"/>
+      <class name="Collection_Service.TC_04_Get_Payment_Invoice_History"/>
+      <class name="Collection_Service.TC_01_Get_Overdue_Invoice"/>
+      <class name="Collection_Service.TC_02_Get_Single_Invoices"/>
+      <class name="Collection_Service.TC_06_Get_Waver_Payment_History"/>
+      <class name="Collection_Service.TC_07_Get_audit_log"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

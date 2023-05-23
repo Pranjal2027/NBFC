@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="credit_Note">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Credit_Note.TC_02_Credit_note_manual"/>
+      <class name="Credit_Note.TC_01_Credit_note_upload"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

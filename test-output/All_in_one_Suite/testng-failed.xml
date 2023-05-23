@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [All_in_one_Suite]">
+  <test thread-count="4" name="All_in_one_Test(failed)">
+    <classes>
+      <class name="invoices.Search_by_invoice_date">
+        <methods>
+          <include name="Invoice_number"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- invoices.Search_by_invoice_date -->
+      <class name="manage_companies.edit_company_email_add">
+        <methods>
+          <include name="Edit_comp"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.edit_company_email_add -->
+      <class name="manage_companies.Search_by_company_name">
+        <methods>
+          <include name="Search_by_comp_name"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.Search_by_company_name -->
+      <class name="manage_companies.edit_gst_no">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Hold_comp"/>
+        </methods>
+      </class> <!-- manage_companies.edit_gst_no -->
+      <class name="manage_companies.Search_by_Hold_company">
+        <methods>
+          <include name="Approve_comp"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.Search_by_Hold_company -->
+      <class name="e_mandate.Items_per_page_20">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="per_page"/>
+        </methods>
+      </class> <!-- e_mandate.Items_per_page_20 -->
+      <class name="edit_Invoices_Details.Edit_Invoice_outstandig_amount">
+        <methods>
+          <include name="Invoice_Edit"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- edit_Invoices_Details.Edit_Invoice_outstandig_amount -->
+      <class name="invoices.Invoice_due_in_2days">
+        <methods>
+          <include name="Invoice_due_in"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- invoices.Invoice_due_in_2days -->
+      <class name="invoices.Invoice_Status_Seller_Absent">
+        <methods>
+          <include name="Invoice_due_in"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- invoices.Invoice_Status_Seller_Absent -->
+      <class name="invoices.Invoice_Status_Paid">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Invoice_due_in"/>
+        </methods>
+      </class> <!-- invoices.Invoice_Status_Paid -->
+      <class name="invoices.click_on_Next_Page">
+        <methods>
+          <include name="Invoice_due_in"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- invoices.click_on_Next_Page -->
+      <class name="manage_staff.Search_user_by_name">
+        <methods>
+          <include name="Search"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_staff.Search_user_by_name -->
+      <class name="invoices.Invoice_Status_Confirmed">
+        <methods>
+          <include name="Invoice_due_in"/>
+        </methods>
+      </class> <!-- invoices.Invoice_Status_Confirmed -->
+      <class name="invoices.Invoice_due_in_10days">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Invoice_due_in"/>
+        </methods>
+      </class> <!-- invoices.Invoice_due_in_10days -->
+      <class name="manage_companies.Credit_plan_selection_6">
+        <methods>
+          <include name="credit_plan_select"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.Credit_plan_selection_6 -->
+      <class name="manage_staff.Edit_user_to_Inactive">
+        <methods>
+          <include name="Edit_user"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_staff.Edit_user_to_Inactive -->
+      <class name="manage_staff.Edit_user_email_admin">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Edit_user"/>
+        </methods>
+      </class> <!-- manage_staff.Edit_user_email_admin -->
+      <class name="invoices.Select_User_Buyer">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Invoice_due_in"/>
+        </methods>
+      </class> <!-- invoices.Select_User_Buyer -->
+      <class name="invoices.Invoice_due_in_7days">
+        <methods>
+          <include name="Invoice_due_in"/>
+        </methods>
+      </class> <!-- invoices.Invoice_due_in_7days -->
+      <class name="manage_Users.Edit_usrs_User_Type_Active">
+        <methods>
+          <include name="Edit_user_type_active"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_Users.Edit_usrs_User_Type_Active -->
+      <class name="payment_history.Change_status_to_Pending">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Invoice_due_in"/>
+        </methods>
+      </class> <!-- payment_history.Change_status_to_Pending -->
+      <class name="invoices.Invoice_Status_Rejected">
+        <methods>
+          <include name="Invoice_due_in"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- invoices.Invoice_Status_Rejected -->
+      <class name="manage_Users.TC_Search_user_by_name">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Search"/>
+        </methods>
+      </class> <!-- manage_Users.TC_Search_user_by_name -->
+      <class name="manage_staff.Edit_user_LN_admin">
+        <methods>
+          <include name="Edit_user"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_staff.Edit_user_LN_admin -->
+      <class name="edit_Invoices_Details.Edit_Invoice_Status_Paid">
+        <methods>
+          <include name="Invoice_Edit"/>
+        </methods>
+      </class> <!-- edit_Invoices_Details.Edit_Invoice_Status_Paid -->
+      <class name="payment_history.Change_status_to_Failure">
+        <methods>
+          <include name="Invoice_due_in"/>
+        </methods>
+      </class> <!-- payment_history.Change_status_to_Failure -->
+      <class name="manage_companies.edit_district">
+        <methods>
+          <include name="Hold_comp"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.edit_district -->
+      <class name="payment_history.click_on_Next_Page">
+        <methods>
+          <include name="Manage_comp"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- payment_history.click_on_Next_Page -->
+      <class name="manage_companies.Search_by_Inactive_company">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Approve_comp"/>
+        </methods>
+      </class> <!-- manage_companies.Search_by_Inactive_company -->
+      <class name="edit_Invoices_Details.Edit_Invoice_Status_Buyer_Absent">
+        <methods>
+          <include name="Invoice_Edit"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- edit_Invoices_Details.Edit_Invoice_Status_Buyer_Absent -->
+      <class name="manage_companies.Credit_plan_selection_7">
+        <methods>
+          <include name="credit_plan_select"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.Credit_plan_selection_7 -->
+      <class name="invoices.Items_per_page_50">
+        <methods>
+          <include name="Invoice_due_in"/>
+        </methods>
+      </class> <!-- invoices.Items_per_page_50 -->
+      <class name="edit_Invoices_Details.Edit_Invoice_Due_Date">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Invoice_Edit"/>
+        </methods>
+      </class> <!-- edit_Invoices_Details.Edit_Invoice_Due_Date -->
+      <class name="invoices.Invoice_Status_Buyer_Absent">
+        <methods>
+          <include name="Invoice_due_in"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- invoices.Invoice_Status_Buyer_Absent -->
+      <class name="edit_Invoices_Details.Edit_Invoice_Status_Confirmed">
+        <methods>
+          <include name="Invoice_Edit"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- edit_Invoices_Details.Edit_Invoice_Status_Confirmed -->
+      <class name="manage_companies.Items_per_page_50">
+        <methods>
+          <include name="Manage_comp"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.Items_per_page_50 -->
+      <class name="invoices.Select_User_Type_Seller">
+        <methods>
+          <include name="Invoice_due_in"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- invoices.Select_User_Type_Seller -->
+      <class name="manage_companies.Search_by_Approve_company">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Approve_comp"/>
+        </methods>
+      </class> <!-- manage_companies.Search_by_Approve_company -->
+      <class name="payment_history.Search_by_invoice_no">
+        <methods>
+          <include name="Invoice_due_in"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- payment_history.Search_by_invoice_no -->
+      <class name="invoices.Items_per_page_20">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Invoice_due_in"/>
+        </methods>
+      </class> <!-- invoices.Items_per_page_20 -->
+      <class name="manage_Users.Items_per_page_10">
+        <methods>
+          <include name="Manage_comp"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_Users.Items_per_page_10 -->
+      <class name="manage_companies.edit_pin_code">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Hold_comp"/>
+        </methods>
+      </class> <!-- manage_companies.edit_pin_code -->
+      <class name="invoices.Invoice_Status_Duplicate">
+        <methods>
+          <include name="Invoice_due_in"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- invoices.Invoice_Status_Duplicate -->
+      <class name="manage_staff.Edit_user_FN_admin">
+        <methods>
+          <include name="Edit_user"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_staff.Edit_user_FN_admin -->
+      <class name="edit_Invoices_Details.Edit_Invoice_Amount">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Invoice_Edit"/>
+        </methods>
+      </class> <!-- edit_Invoices_Details.Edit_Invoice_Amount -->
+      <class name="payment_history.Items_per_page_50">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Invoice_due_in"/>
+        </methods>
+      </class> <!-- payment_history.Items_per_page_50 -->
+      <class name="manage_companies.edit_company_name">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Hold_comp"/>
+        </methods>
+      </class> <!-- manage_companies.edit_company_name -->
+      <class name="invoices.Invoice_Status_Pending">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Invoice_due_in"/>
+        </methods>
+      </class> <!-- invoices.Invoice_Status_Pending -->
+      <class name="edit_Invoices_Details.Edit_Invoice_Status_Seller_Absent">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Invoice_Edit"/>
+        </methods>
+      </class> <!-- edit_Invoices_Details.Edit_Invoice_Status_Seller_Absent -->
+      <class name="manage_companies.date_range_based_on_the_registration">
+        <methods>
+          <include name="Date_range_based_on_registration"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.date_range_based_on_the_registration -->
+      <class name="manage_Users.Edit_usrs_FN">
+        <methods>
+          <include name="Edit_FN"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_Users.Edit_usrs_FN -->
+      <class name="payment_history.Change_status_to_Paid">
+        <methods>
+          <include name="Invoice_due_in"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- payment_history.Change_status_to_Paid -->
+      <class name="manage_companies.Search_by_gst">
+        <methods>
+          <include name="Search_GST"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.Search_by_gst -->
+      <class name="manage_companies.edit_admin_email_add">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Hold_comp"/>
+        </methods>
+      </class> <!-- manage_companies.edit_admin_email_add -->
+      <class name="edit_Invoices_Details.Edit_Invoice_Status_Duplicate">
+        <methods>
+          <include name="Invoice_Edit"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- edit_Invoices_Details.Edit_Invoice_Status_Duplicate -->
+      <class name="manage_companies.edit_company_status_Hold">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Edit_comp"/>
+        </methods>
+      </class> <!-- manage_companies.edit_company_status_Hold -->
+      <class name="manage_companies.edit_credit_limit">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Hold_comp"/>
+        </methods>
+      </class> <!-- manage_companies.edit_credit_limit -->
+      <class name="payment_history.Search_by_payment_date">
+        <methods>
+          <include name="Invoice_due_in"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- payment_history.Search_by_payment_date -->
+      <class name="manage_staff.click_on_Next_Page">
+        <methods>
+          <include name="Manage_comp"/>
+        </methods>
+      </class> <!-- manage_staff.click_on_Next_Page -->
+      <class name="manage_companies.Items_per_page_20">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Manage_comp"/>
+        </methods>
+      </class> <!-- manage_companies.Items_per_page_20 -->
+      <class name="manage_companies.edit_TAN">
+        <methods>
+          <include name="Hold_comp"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.edit_TAN -->
+      <class name="edit_Invoices_Details.Edit_Invoice_Status_Draft">
+        <methods>
+          <include name="Invoice_Edit"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- edit_Invoices_Details.Edit_Invoice_Status_Draft -->
+      <class name="edit_Invoices_Details.Edit_Invoice_Status_Pending">
+        <methods>
+          <include name="Invoice_Edit"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- edit_Invoices_Details.Edit_Invoice_Status_Pending -->
+      <class name="manage_companies.edit_annual_turnover">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Edit_comp"/>
+        </methods>
+      </class> <!-- manage_companies.edit_annual_turnover -->
+      <class name="manage_staff.Edit_user_MN_admin">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Edit_user"/>
+        </methods>
+      </class> <!-- manage_staff.Edit_user_MN_admin -->
+      <class name="edit_Invoices_Details.Edit_Invoice_No">
+        <methods>
+          <include name="Invoice_Edit"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- edit_Invoices_Details.Edit_Invoice_No -->
+      <class name="edit_Invoices_Details.Edit_Invoice_Date">
+        <methods>
+          <include name="Invoice_Edit"/>
+        </methods>
+      </class> <!-- edit_Invoices_Details.Edit_Invoice_Date -->
+      <class name="invoices.Invoice_due_in_5days">
+        <methods>
+          <include name="Invoice_due_in"/>
+        </methods>
+      </class> <!-- invoices.Invoice_due_in_5days -->
+      <class name="manage_staff.Items_per_page_50">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Manage_comp"/>
+        </methods>
+      </class> <!-- manage_staff.Items_per_page_50 -->
+      <class name="invoices.Invoice_Status_Partpay">
+        <methods>
+          <include name="Invoice_due_in"/>
+        </methods>
+      </class> <!-- invoices.Invoice_Status_Partpay -->
+      <class name="edit_Invoices_Details.Edit_Invoice_Extra_credit_Yes">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Invoice_Edit"/>
+        </methods>
+      </class> <!-- edit_Invoices_Details.Edit_Invoice_Extra_credit_Yes -->
+      <class name="manage_staff.Edit_user_to_Xuriti_Staff">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Edit_user"/>
+        </methods>
+      </class> <!-- manage_staff.Edit_user_to_Xuriti_Staff -->
+      <class name="manage_staff.Add_user_staff">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Search"/>
+        </methods>
+      </class> <!-- manage_staff.Add_user_staff -->
+      <class name="manage_Users.Items_per_page_50">
+        <methods>
+          <include name="Manage_comp"/>
+        </methods>
+      </class> <!-- manage_Users.Items_per_page_50 -->
+      <class name="invoices.Invoice_Status_Incomplete">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Invoice_due_in"/>
+        </methods>
+      </class> <!-- invoices.Invoice_Status_Incomplete -->
+      <class name="manage_companies.edit_company_pan">
+        <methods>
+          <include name="Hold_comp"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_companies.edit_company_pan -->
+      <class name="manage_staff.Items_per_page_20">
+        <methods>
+          <include name="Manage_comp"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_staff.Items_per_page_20 -->
+      <class name="invoices.Search_by_invoice_GST_num">
+        <methods>
+          <include name="Invoice_number"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- invoices.Search_by_invoice_GST_num -->
+      <class name="manage_Users.Edit_usrs_User_Type_Inactive">
+        <methods>
+          <include name="Edit_user_type_active"/>
+          <include name="Sign_up"/>
+        </methods>
+      </class> <!-- manage_Users.Edit_usrs_User_Type_Inactive -->
+      <class name="payment_history.Items_per_page_20">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Invoice_due_in"/>
+        </methods>
+      </class> <!-- payment_history.Items_per_page_20 -->
+      <class name="edit_Invoices_Details.Edit_Invoice_Status_Rejected">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Invoice_Edit"/>
+        </methods>
+      </class> <!-- edit_Invoices_Details.Edit_Invoice_Status_Rejected -->
+      <class name="manage_companies.edit_company_mobile_num">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Hold_comp"/>
+        </methods>
+      </class> <!-- manage_companies.edit_company_mobile_num -->
+      <class name="edit_Invoices_Details.Edit_Invoice_Extra_credit_No">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Invoice_Edit"/>
+        </methods>
+      </class> <!-- edit_Invoices_Details.Edit_Invoice_Extra_credit_No -->
+    </classes>
+  </test> <!-- All_in_one_Test(failed) -->
+</suite> <!-- Failed suite [All_in_one_Suite] -->

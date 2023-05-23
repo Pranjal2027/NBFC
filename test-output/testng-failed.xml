@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Entity_Service.TC_24_Plan_details_get">
+        <methods>
+          <include name="setup"/>
+          <include name="get_plan_details"/>
+        </methods>
+      </class> <!-- Entity_Service.TC_24_Plan_details_get -->
+      <class name="Entity_Service.TC_33_entity_cron">
+        <methods>
+          <include name="cron"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Entity_Service.TC_33_entity_cron -->
+      <class name="Entity_Service.TC_15_Get_Comment">
+        <methods>
+          <include name="setup"/>
+          <include name="Get_Credit_Limit_Approval"/>
+          <include name="Get_Credit_Limit_Approval_Wrong_id"/>
+        </methods>
+      </class> <!-- Entity_Service.TC_15_Get_Comment -->
+      <class name="Entity_Service.TC_01_Search_GST">
+        <methods>
+          <include name="Search_GST_By_Blank_Fields"/>
+          <include name="setup"/>
+          <include name="Search_GST"/>
+        </methods>
+      </class> <!-- Entity_Service.TC_01_Search_GST -->
+      <class name="Entity_Service.TC_22_filter_companies">
+        <methods>
+          <include name="filter_companies"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Entity_Service.TC_22_filter_companies -->
+      <class name="Entity_Service.TC_18_GST_Exists">
+        <methods>
+          <include name="setup"/>
+          <include name="Gst_Exists"/>
+          <include name="Wrong_Gst_Exists"/>
+        </methods>
+      </class> <!-- Entity_Service.TC_18_GST_Exists -->
+      <class name="Entity_Service.TC_25_discount_get_single_plan">
+        <methods>
+          <include name="setup"/>
+          <include name="discount_get_plan_single"/>
+        </methods>
+      </class> <!-- Entity_Service.TC_25_discount_get_single_plan -->
+      <class name="Entity_Service.TC_04_Update_Company">
+        <methods>
+          <include name="setup"/>
+          <include name="Update_Entity_Details"/>
+        </methods>
+      </class> <!-- Entity_Service.TC_04_Update_Company -->
+      <class name="Entity_Service.TC_03_Add_Entity">
+        <methods>
+          <include name="Add_Entity_All_Fields_Blank"/>
+          <include name="Company_Already_Registered"/>
+          <include name="setup"/>
+          <include name="Add_Entity_GSTin_Field_Blank"/>
+          <include name="Add_Entity_All_Details"/>
+        </methods>
+      </class> <!-- Entity_Service.TC_03_Add_Entity -->
+      <class name="Entity_Service.TC_32_onboard">
+        <methods>
+          <include name="onboard"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Entity_Service.TC_32_onboard -->
+      <class name="Entity_Service.TC_16_Get_Gst_Data">
+        <methods>
+          <include name="setup"/>
+          <include name="Gst_Data"/>
+          <include name="Gst_Data_Blank"/>
+        </methods>
+      </class> <!-- Entity_Service.TC_16_Get_Gst_Data -->
+      <class name="Entity_Service.TC_17_local_entites">
+        <methods>
+          <include name="local_entities"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Entity_Service.TC_17_local_entites -->
+      <class name="Entity_Service.TC_12_Check_Entity_Status">
+        <methods>
+          <include name="Check_Entities_Status_Approved"/>
+          <include name="Check_Entities_Status_Hold"/>
+          <include name="Check_Entities_Status_Inactive"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Entity_Service.TC_12_Check_Entity_Status -->
+      <class name="Entity_Service.TC_07_Default_Flag_Controller">
+        <methods>
+          <include name="Default_Flag_Controller"/>
+          <include name="Default_Flag_Controller_wrong_url"/>
+          <include name="Default_Flag_Controller_wrong_id2"/>
+          <include name="Default_Flag_Controller_wrong_id1"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Entity_Service.TC_07_Default_Flag_Controller -->
+      <class name="Entity_Service.TC_23_company_status">
+        <methods>
+          <include name="company_status"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Entity_Service.TC_23_company_status -->
+      <class name="Entity_Service.TC_30_Bussiness_analysis_trend">
+        <methods>
+          <include name="bussiness_Analysis_trend"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Entity_Service.TC_30_Bussiness_analysis_trend -->
+      <class name="Entity_Service.TC_20_get_companies">
+        <methods>
+          <include name="get_companies_by_typebuyer_id_seller"/>
+          <include name="get_companies_by_buyer_type"/>
+          <include name="setup"/>
+          <include name="get_companies_by_typeseller_id_buyer"/>
+          <include name="get_companies_by_seller_type"/>
+        </methods>
+      </class> <!-- Entity_Service.TC_20_get_companies -->
+      <class name="Entity_Service.TC_14_Credit_Limit">
+        <methods>
+          <include name="Credit_Limit"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Entity_Service.TC_14_Credit_Limit -->
+      <class name="Entity_Service.TC_26_credit_limit_approval">
+        <methods>
+          <include name="credit_limit_approval"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Entity_Service.TC_26_credit_limit_approval -->
+      <class name="Entity_Service.TC_10_Discount_Del_Controller">
+        <methods>
+          <include name="Default_Flag_Controller"/>
+          <include name="Default_Flag_Controller_wrong_id1"/>
+          <include name="setup"/>
+          <include name="Default_Flag_Controller_wrong_id2"/>
+          <include name="Default_Flag_Controller_wrong_url"/>
+        </methods>
+      </class> <!-- Entity_Service.TC_10_Discount_Del_Controller -->
+      <class name="Entity_Service.TC_08_Add_Comment">
+        <methods>
+          <include name="setup"/>
+          <include name="Add_Comment_Comment_Field_Blank"/>
+          <include name="Add_Comment_Id_Field_Blank"/>
+          <include name="Add_Comment_User_Id_Field_Blank"/>
+          <include name="Add_Comment"/>
+        </methods>
+      </class> <!-- Entity_Service.TC_08_Add_Comment -->
+      <class name="Entity_Service.TC_05_Discount_Controller">
+        <methods>
+          <include name="setup"/>
+          <include name="Discount_Mapping_Controller"/>
+          <include name="Discount_Mapping_Controller_By_Wrong_id"/>
+        </methods>
+      </class> <!-- Entity_Service.TC_05_Discount_Controller -->
+      <class name="Entity_Service.TC_11_Fetch_Entities">
+        <methods>
+          <include name="setup"/>
+          <include name="Fetch_Entities_Wrong_id"/>
+          <include name="Fetch_Entities"/>
+        </methods>
+      </class> <!-- Entity_Service.TC_11_Fetch_Entities -->
+      <class name="Entity_Service.TC_27_bill_Summary">
+        <methods>
+          <include name="setup"/>
+          <include name="bill_summary"/>
+        </methods>
+      </class> <!-- Entity_Service.TC_27_bill_Summary -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

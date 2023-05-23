@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="User_Incoice">
+  <test thread-count="5" name="Test">
+    <classes>
+	  <class name="Invoice_Services.TC_04_Get_All_Invoice"/>
+
+      <class name="User_service.TC_01_Staff_User_Post"/>
+       <class name="User_service.TC_02_First_Name_Staff_User_Post"/>
+       <class name="User_service.TC_03_Last_Name_Staff_User_Post"/>
+      <class name="User_service.TC_04_Email_Staff_User_Post"/>
+       <class name="User_service.TC_05_Mobile_Staff_User_Post"/>
+         <class name="User_service.TC_06_User_Role_Staff_User_Post"/>
+       <class name="User_service.TC_07_RegisterBy_Staff_User"/>
+        <class name="User_service.TC_08_Staff_User_Add_Blanks"/>
+       <class name="User_service.TC_09_get_Rewards"/>
+         <class name="User_service.TC_10_terms_conditions"/>
+      <class name="User_service.TC_12_soft_Delete"/>
+      <class name="User_service.TC_13_get_User_Details"/>
+       <class name="User_service.TC_14_edit_User_Admin"/>
+         <class name="User_service.TC_15_comp_staff_relation"/>
+          <class name="Invoice_Services.TC_01_Get_Invoice_By_Invoice_Id"/>
+           <class name="Invoice_Services.TC_02_Get_Invoice_Details"/>
+           <class name="Invoice_Services.TC_03_Search_Invoice_By_Buyer_Id_type"/>
+           <class name="Invoice_Services.TC_05_Get_Entity_summary"/>
+             <class name="Invoice_Services.TC_08_Add_Invoice_Comment"/>
+                   <class name="Invoice_Services.TC_16_Filter_Invoice"/>
+                     
+                      <class name="Invoice_Services.clientkeyprovider"/>
+                      <class name="Invoice_Services.Client_Key_genrate"/>
+      
+                       <class name="Invoice_Services.Tc_17_NT_Manual_Invoice_upload"/>
+                        <class name="Invoice_Services.TC_20_Get_Comment"/>
+                           <class name="Invoice_Services.TC_21_Add_Comment"/>
+                            <class name="Invoice_Services.TC_22_adding_invoices"/>
+                            <class name="Invoice_Services.TC_23_settled_invoices"/>
+                             <class name="Invoice_Services.TC_25_post_credit_note"/>
+
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

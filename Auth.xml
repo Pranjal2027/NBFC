@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Auth">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Auth_Services.TC_3_SignIn"/>
+      <class name="Auth_Services.TC_6_Invalid_Scenario_SendOTP"/>
+      <class name="Auth_Services.TC_1_SignUp_Valid"/>
+      <class name="Auth_Services.TC_4_Invalid_Scenario_Sign_In"/>
+      <class name="Auth_Services.TC_9_Unblock_user"/>
+      <class name="Auth_Services.TC_5_Send_OTP"/>
+      <class name="Auth_Services.TC_7_Forgot_Password"/>
+      <class name="Auth_Services.TC_2_SignUp_Field_validation"/>
+      <class name="Auth_Services.TC_8_OTP_Verify"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

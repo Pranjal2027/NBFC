@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [edit_invoices_Suite]">
+  <test thread-count="5" name="edit_invoices_Test(failed)">
+    <classes>
+      <class name="edit_Invoices_Details.Edit_Invoice_Status_Draft">
+        <methods>
+          <include name="Invoice_Edit"/>
+        </methods>
+      </class> <!-- edit_Invoices_Details.Edit_Invoice_Status_Draft -->
+      <class name="edit_Invoices_Details.Edit_Invoice_Status_Rejected">
+        <methods>
+          <include name="Invoice_Edit"/>
+        </methods>
+      </class> <!-- edit_Invoices_Details.Edit_Invoice_Status_Rejected -->
+      <class name="edit_Invoices_Details.Edit_Invoice_Due_Date">
+        <methods>
+          <include name="Sign_up"/>
+          <include name="Invoice_Edit"/>
+        </methods>
+      </class> <!-- edit_Invoices_Details.Edit_Invoice_Due_Date -->
+    </classes>
+  </test> <!-- edit_invoices_Test(failed) -->
+</suite> <!-- Failed suite [edit_invoices_Suite] -->

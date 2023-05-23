@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-23T11:10:47 IST" name="Default suite" finished-at="2023-05-23T11:10:51 IST" duration-ms="3842">
+    <groups>
+    </groups>
+    <test started-at="2023-05-23T11:10:47 IST" name="Default test" finished-at="2023-05-23T11:10:51 IST" duration-ms="3842">
+      <class name="Entity_Service.TC_03_Add_Entity">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Entity_Service.TC_03_Add_Entity@10feca44]" started-at="2023-05-23T11:10:47 IST" name="setup" finished-at="2023-05-23T11:10:50 IST" duration-ms="3380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Add_Entity_All_Details()[pri:0, instance:Entity_Service.TC_03_Add_Entity@10feca44]" started-at="2023-05-23T11:10:50 IST" name="Add_Entity_All_Details" finished-at="2023-05-23T11:10:51 IST" duration-ms="227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Add_Entity_All_Details -->
+        <test-method signature="Add_Entity_All_Fields_Blank()[pri:0, instance:Entity_Service.TC_03_Add_Entity@10feca44]" started-at="2023-05-23T11:10:51 IST" name="Add_Entity_All_Fields_Blank" finished-at="2023-05-23T11:10:51 IST" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Add_Entity_All_Fields_Blank -->
+        <test-method signature="Add_Entity_GSTin_Field_Blank()[pri:0, instance:Entity_Service.TC_03_Add_Entity@10feca44]" started-at="2023-05-23T11:10:51 IST" name="Add_Entity_GSTin_Field_Blank" finished-at="2023-05-23T11:10:51 IST" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Add_Entity_GSTin_Field_Blank -->
+        <test-method signature="Company_Already_Registered()[pri:0, instance:Entity_Service.TC_03_Add_Entity@10feca44]" started-at="2023-05-23T11:10:51 IST" name="Company_Already_Registered" finished-at="2023-05-23T11:10:51 IST" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Company_Already_Registered -->
+      </class> <!-- Entity_Service.TC_03_Add_Entity -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

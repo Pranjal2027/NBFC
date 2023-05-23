@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Invoice.TC_10_Interest_Cal"/>
+      <class name="Invoice.TC_11_Get_Companies_WhatsUp"/>
+      <class name="Invoice.TC_15_Invoice_Status_Update"/>
+      <class name="Invoice.TC_09_Get_Invoice_Comment"/>
+      <class name="Invoice.TC_06_Invoice_Amount_Update"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
